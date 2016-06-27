@@ -1,0 +1,110 @@
+<!--#include virtual="includes/header.shtml" --> 
+
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <h1>CSS</h1>
+          <p>Govstrap is basically Bootstrap with small enhancements to make it look GOV.UK themed. Below we'll go through some CSS that helps us with that.</p>
+          <a name="hero-banner"></a>
+          <h3>Hero Banner</h3>
+          <p>Hero banners work best just under the main navigation, where you can put the first bit of information a user will see. Generally you'll only have one hero banner per site, but that doesn't mean you're limited to it.</p>
+          <p>You'll want to add the <code>hero-banner</code> class to your surrounding <code>container-fluid</code> so it spans the entire screen, just like our landing page.</p>
+          <div class="phase-tag-alpha">Example</div>
+          <pre>
+            <code class="language-markup">
+&lt;section class="container-fluid hero-banner"&gt;
+  &lt;div class="content"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-12"&gt;
+        &lt;h1>Welcome to Example site!&lt;/h1&gt;
+        &lt;p&gt;Add some text here to grab your audiences attention. It is a 
+        HERO banner afterall!&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+            </code>
+          </pre>
+
+          <a name="promo-banner"></a>
+          <h3>Promo Banner <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+          <p>Promo banners are bright yellow, and will really draw the attention of people browsing your website. They should span the entire screen, just like hero banners.</p>
+          <div class="phase-tag-alpha">Example</div>
+          <pre>
+            <code class="language-markup">
+&lt;section class="container-fluid promo-banner"&gt;
+  &lt;div class="content"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-12"&gt;
+        &lt;strong&gt;Use the strong tag for the top text. This should be related 
+        and lead up to the text below it&lt;/strong&gt;
+        &lt;p&gt;This totally got my attention&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+            </code>
+          </pre>
+
+          <a name="general-banners"></a>
+          <h3>General Banners <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+          <p>Normal banners (<code>.banner</code>) are light blue and can be used anywhere. Like other banners, they should use the full length of the page</p>
+          <div class="phase-tag-alpha">Example</div>
+          <pre>
+            <code class="language-markup">
+&lt;section class="container-fluid banner"&gt;
+  &lt;div class="content"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-12"&gt;
+        &lt;strong&gt;Strong tags work the same as the promo banners&lt;/strong&gt;
+        &lt;p&gt;Some nice text here. Whatever you want really.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+            </code>
+          </pre>
+
+          <a name="button-apply"></a>
+          <h3>Apply Button <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+          <p>Sometimes you'll want a big button for important processes, like applying for something. The <code>.btn-apply</code> is useful here.</p>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Keep in mind that <code>btn-apply</code> is a block, so it'll take up an entire column. I've used 2 <code>col-sm-6</code>'s here to demonstrate</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="btn-apply">
+                <a href="#button-apply">Apply for foo now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="phase-tag-alpha">Example</div>
+              <pre>
+                <code class="language-markup">
+&lt;div class="btn-apply"&gt;
+  &lt;a href="#"&gt;Apply for foo now!&lt;/a&gt;
+&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <aside class="col-sm-4">
+          <div class="side-bar side-bar-right">
+            <h4 class="bg-primary">Quick Links</h4>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#hero-banner">Hero Banners</a></li>
+              <li><a href="#promo-banner">Promo Banners</a></li>
+              <li><a href="#general-banners">General Banners</a></li>
+              <li><a href="#button-apply">Apply button</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+<!--#include virtual="includes/footer.shtml" -->
+
+
