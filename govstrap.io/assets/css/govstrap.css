@@ -7,10 +7,22 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #0b0c0c;
-	font-size: 15px;
+	font-size: 16px;
 }
 
-h1, h2, h3, h4 { font-weight: 700; }
+h1, h2, h3 { font-weight: 700; }
+h4, h5, h6 { font-weight: bold; }
+
+h4 {
+	font-size: 19px;
+	line-height: 25px;
+	margin: 0;
+}
+
+.row {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
 
 section { margin-bottom: 10px; }
 
@@ -25,11 +37,15 @@ a:focus {
 
 a:link {
     color: #005ea5;
-    font-weight: 600;
+    text-decoration: underline;
 }
 
 a:hover {
     color: #2e8aca;
+}
+
+a:visited {
+	color: #4c2c92;
 }
 
 .navbar {
@@ -281,7 +297,7 @@ aside {
 	box-shadow: none;
 }
 
-.checkbox label {
+/*.checkbox label {
   cursor: pointer;
 }
 
@@ -311,7 +327,7 @@ aside {
 
 .checkbox label {
     padding-left: 0;
-}
+}*/
 
 .input-group-btn:last-child>.btn {
 	height: 37px;
@@ -331,7 +347,6 @@ aside {
 .bg-primary {
 	padding: 10px;
 	background-color: #005EA5;
-	font-weight: 700;
 }
 
 .nav-pills>li>a { border-radius: 0; }
@@ -469,4 +484,69 @@ a.scroll-top {
 .footer a, .footer a:visited, .footer a:hover {
 	text-decoration: underline;
 	font-weight: normal;
+}
+
+.well {
+	background-color: #f5f2f0;
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 0;
+}
+
+.block-label.checked {
+	background-color: #fff;
+	border: 1px solid #0b0c0c;
+}
+
+.block-label {
+	vertical-align: middle;
+	line-height: 29px;
+	background-color: #dee0e2;
+    border: 1px solid #dee0e2;
+	padding: 10px 30px 12px 35px;
+}
+
+.block-label input[type=radio] {
+	position: initial;
+	vertical-align: bottom;
+	height: 29px;
+	width: 29px;
+	margin-right: 10px;
+}
+
+.block-label input[type=checkbox] {
+	position: initial;
+	vertical-align: bottom;
+	height: 29px;
+	width: 29px;
+	margin-right: 10px;
+}
+.block-label input[type=checkbox]:checked+label {
+	background-color: #fff;
+}
+
+.checkbox label.block-label { padding-left: 35px; }
+.checkbox:hover label.block-label {
+	border: 1px solid #0b0c0c;
+}
+.block-label:hover { border: 1px solid #0b0c0c; }
+
+.js-hidden { display: none; }
+
+.panel-left {
+	border-left: 5px solid #bfc1c3;
+	padding-left: 20px;
+}
+
+input {
+	-moz-appearance: none;
+	outline: none !important;
+}
+
+.btn-start, .btn-start:active, .btn-start:focus {
+	background-image: url('../img/icon-pointer.png');
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	padding-right: 3.157895em;
+	font-weight: 700;
+	text-transform: none;
 }
