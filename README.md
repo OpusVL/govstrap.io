@@ -11,6 +11,6 @@ Please keep in mind this project is still beta, meaning things may not be workin
 
 This repo contains the http://govstrap.io website code and examples.
 
-The site is created using apache SSI to simplify editing and management of the site. govstrap.ip has also been integrateds in to the http://flexibase.io CMS platform.
+The site is created using apache SSI to simplify editing and management of the site. govstrap.io has also been integrated in to the http://flexibase.io CMS platform.
 
 
