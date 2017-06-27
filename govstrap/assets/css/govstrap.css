@@ -93,7 +93,9 @@ a:visited {
   float: none;
   display: inline-block;
 }
-
+.icon-bar {
+	background-color: aliceblue;
+}
 .container-fluid { }
 
 .header-bar {
