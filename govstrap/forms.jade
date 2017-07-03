@@ -1,0 +1,222 @@
+include includes/header.jade
+
+section.container
+  .row
+    div(clas='col-sm-4')
+      aside.col-sm-4
+        .side-bar
+          h4.bg-primary Quick Links
+          ul.nav.nav-pills.nav-stacked
+            li
+              a(href='#fields-text') Text fields
+            li
+              a(href='#fields-select') Select fields
+            li
+              a(href='#fields-radio') Radio buttons
+            li
+              a(href='#fields-checkbox') Checkboxes
+            li
+              a(href='#cond-fields') Conditional fields
+    .col-sm-8
+      h1 Forms
+      p
+        | GOVstrap uses the same form layout as regular Bootstrap, so you don't need to learn anything new. There are a few extra features you may want to use later on however.
+      a(name='fields-text')
+      h3 Text field
+      p
+        | An example of a basic text field. You can add help text for each field by using the 
+        code help-block
+        |  class.
+      .phase-tag-alpha Example
+      .well
+        form.form
+          .form-group
+            label.control-label(for='userName') Your name
+            input#userName.form-control(type='text')
+            p.help-block Your parents probably gave you this name
+      pre.language-markup.
+        &lt;code class="language-markup"&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label class="control-label" for="userName">Your name&lt;/label&gt;
+            &lt;input type="text" class="form-control" id="userName"&gt;
+            &lt;p class="help-block"&gt;Your parents probably gave you this name&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/code&gt;  
+      a(name='fields-select')
+      h3
+        | Select field 
+        span.pull-right
+          a.scroll-top(href='javascript:;') Top
+      .phase-tag-alpha Example
+      .well
+        form.form
+          .form-group
+            label.control-label(for='myOptions') Pick an option
+            select#myOptions.form-control
+              option Something
+              option More things
+              option Even more
+      pre.language-markup.
+        &lt;code class="language-markup"&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label class="control-label" for="myOptions">Pick an option&lt;/label&gt;
+              &lt;select class="form-control" id="myOptions"&gt;
+                &lt;option>Something&lt;/option&gt;
+                &lt;option>More things&lt;/option&gt;
+                &lt;option>Even more&lt;/option&gt;
+              &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/code&gt;
+      a(name='fields-radio')
+      h3
+        | Radio Buttons 
+        span.pull-right
+          a.scroll-top(href='javascript:;') Top
+      p
+        | The main thing to keep in mind with large checkboxes and radio buttons, is that 
+        code .block-label
+        |  controls the size of the field. Excluding that class gives you a regular element.
+      .phase-tag-alpha Example
+      .well
+        form.form
+          .form-group
+            label.radio-inline.block-label
+              input(type='radio', name='optradio')
+              | Yes
+            label.radio-inline.block-label
+              input(type='radio', name='optradio')
+              | No
+            label.radio-inline.block-label
+              input(type='radio', name='optradio')
+              | Can you repeat the question?
+      pre.language-markup.
+        
+        &lt;code class="language-markup"&gt;      
+          &lt;div class="form-group"&gt;
+            &lt;label class="radio-inline block-label"&gt;
+              &lt;input type="radio" name="optradio">Yes
+            &lt;/label&gt;
+            &lt;label class="radio-inline block-label"&gt;
+              &lt;input type="radio" name="optradio"&gt;No
+            &lt;/label&gt;
+            &lt;label class="radio-inline block-label"&gt;
+              &lt;input type="radio" name="optradio"&gt;Can you repeat the question?
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/code&gt;
+      a(name='fields-checkbox')
+      h3
+        | Checkboxes 
+        span.pull-right
+          a.scroll-top(href='javascript:;') Top
+      p
+        | Just like the radio buttons, omitting the 
+        code block-label
+        |  would cause it to render standard checkboxes
+      .phase-tag-alpha Example
+      .well
+        form.form
+          .form-group
+            .checkbox
+              label.block-label
+                input(type='checkbox', name='fruits')
+                |  Watermelon
+          .form-group
+            .checkbox
+              label.block-label
+                input(type='checkbox', name='fruits')
+                |  Oranges
+          .form-group
+            .checkbox
+              label.block-label
+                input(type='checkbox', name='fruits')
+                |  Apples
+      pre.language-markup.
+        
+        &lt;code class="language-markup"&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;checkbox&quot;&gt;
+              &lt;label class=&quot;block-label&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;fruits&quot;&gt; Watermelon
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;checkbox&quot;&gt;
+              &lt;label class=&quot;block-label&quot;&gt;
+              &lt;input type=&quot;checkbox&quot; name=&quot;fruits&quot;&gt; Oranges
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;checkbox&quot;&gt;
+              &lt;label class=&quot;block-label&quot;&gt;
+              &lt;input type=&quot;checkbox&quot; name=&quot;fruits&quot;&gt; Apples
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/code&gt;
+        
+        
+      a(name='cond-fields')
+      h3
+        | Conditional fields 
+        span.pull-right
+          a.scroll-top(href='javascript:;') Top
+      p
+        | Sometimes you'll only want to show a field when a specific option has been selected. GOVstrap can handle that right out of the box
+      p
+        | Just add the 
+        code js-togggle
+        |  class to the form-group holding the radio buttons. 
+        code data-target
+        |  tells js-toggle the targets id. 
+        code data-toggle="true"
+        |  to the radio button.
+      p
+        | Finally, the hidden field must have a class of 
+        code js-hidden
+        | , which will hide it by default until it's ready to be shown
+      .phase-tag-alpha Example
+      .well
+        form.form
+          .form-group
+            h4 Do you know their National Insurance number?
+          .form-group.js-toggle(data-target='nin')
+            label.radio-inline.block-label
+              input(type='radio', data-toggle='true', name='hasnin')
+              | Yes
+            label.radio-inline.block-label
+              input(type='radio', name='hasnin')
+              | No
+          .form-group.js-hidden.panel-left
+            label.control-label(for='nin')
+              | National Insurance number
+            input#nin.form-control(type='text')
+      pre.language-markup.
+        &lt;code class="language-markup"&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;h4&gt;Do you know their National Insurance number?&lt;/h4&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;form-group js-toggle&quot; data-target=&quot;nin&quot;&gt;
+            &lt;label class=&quot;radio-inline block-label&quot;&gt;
+            &lt;input type=&quot;radio&quot; data-toggle=&quot;true&quot; name=&quot;hasnin&quot;&gt;Yes
+            &lt;/label&gt;
+            &lt;label class=&quot;radio-inline block-label&quot;&gt;
+            &lt;input type=&quot;radio&quot; name=&quot;hasnin&quot;&gt;No
+            &lt;/label&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;form-group js-hidden panel-left&quot;&gt;
+            &lt;label class=&quot;control-label&quot; for=&quot;nin&quot;&gt;
+            National Insurance number
+            &lt;/label&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;nin&quot;&gt;
+          &lt;/div&gt;
+        &lt;/code&gt;
+          
+      
+include includes/footer.jade
