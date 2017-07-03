@@ -3,12 +3,29 @@ include includes/header.jade
 section.container-fluid.hero-banner
   .content
     .row
-      .col-sm-12
-        h1 Welcome to Govstrap.io! 
+      .col-xs-12.col-sm-8.col-md-8.col-lg-8
+        h1 Welcome 
         p Govstrap.io is a port of the GOV.UK standard website theme to the bootstrap framework. This enables Bootstrap websites to be converted to the GDS design in minutes.
         p Govstrap.io allows websites to be fully responsive and display comfortably across all modern devices, re-using the Government Digital Services investment in user experience and accessibility.
         p The Govstrap.io project is available as Open Source and adheres to the UK Public Sector Open Source and Open Standards policy and guidance.
-
+        form.form-horizontal
+          .form-group
+            input.form-control(type='text', placeholder='Search')
+            button.form-control(type='submit') 
+              i.glyphicon.glyphicon-search
+            
+      aside.col-xs-4.col.sm-4.col-md-4.col-lg-4.inverse
+        h5 Popular items
+        ul.list-unstyled
+          li
+            a(href="#") Some link
+          li
+            a(href="#") Someother link
+          li 
+            a(href="#") Another link
+          li 
+            a(href="#") Last link
+          
 section.container-fluid
   .content
     .row

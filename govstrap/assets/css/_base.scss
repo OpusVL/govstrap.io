@@ -1,0 +1,182 @@
+body {
+	color: #0b0c0c;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+.row {
+	margin: 10px 0 15px;
+}
+
+section {
+	margin-bottom: 10px;
+
+	.container {
+		border-top: 10px solid #005ea5;
+	}
+}
+
+a {
+	&:focus {
+		background-color: #ffbf47;
+		outline: 3px solid #ffbf47;
+	}
+
+	&:link {
+		color: #005ea5;
+		text-decoration: underline;
+	}
+
+	&:hover {
+		color: #2e8aca;
+	}
+
+	&:visited {
+		color: #4c2c92;
+	}
+
+}
+
+.btn {
+	color: #fff;
+	border: 3px solid #00823b;
+	border-radius: 0;
+	background-color: #00823b;
+	-webkit-box-shadow: 0 2px 0 #003618;
+	-moz-box-shadow: 0 2px 0 #003618;
+	box-shadow: 0 2px 0 #003618;
+	font-weight: 600;
+
+	&:hover {
+		color: #fff;
+		border: 3px solid #00692f;
+		background-color: #00692f;
+	}
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.active:active {
+	border: 3px solid #ffbf47;
+	background-color: #00692f;
+	outline: none;
+	outline-offset: 0;
+	color: #fff;
+}
+
+	.btn-default.active.focus,
+	.btn-default.active:focus,
+	.btn-default.active:hover,
+	.btn-default:active.focus,
+	.btn-default:active:focus,
+	.btn-default:active:hover,
+	.open>.dropdown-toggle.btn-default.focus,
+	.open>.dropdown-toggle.btn-default:focus,
+	.open>.dropdown-toggle.btn-default:hover {
+	border: none;
+	}
+
+
+
+	.quick-card {
+	border-top: 5px solid #005ea5;
+	padding-top: 3px;
+	}
+
+	.quick-card { margin-bottom: 60px; }
+
+	.tweets ul {
+	list-style-type: none;
+	}
+
+	.tweets ul > li {
+	display: inline-block;
+	padding: 16px;
+	margin-bottom: 10px;
+	max-width: 468px;
+	background-color: #d5e8f3;
+	}
+
+	.tweets ul > li a { font-weight: 600; }
+	.tweets ul > .not-first { display: none; }
+	.tweets .recent-tweets {
+	border-right: 5px solid #0b0c0c;
+	padding: 10px 10px 20px 10px;
+	background-color: #005ea5;
+	}
+
+	.tweets .recent-tweets, .tweets .recent-tweets , .tweets .recent-tweets  a { color: #fff; }
+
+	a.btn { color: #fff; }
+	.tweets .more {
+	padding-left: 40px;
+	}
+
+	@media(max-width:767px) {
+	.tweets ul, .tweets .more { padding-left: 0; }
+	}
+
+	aside {
+	margin-top: 20px;
+	}
+
+	.dropdown-menu {
+	border-radius: 0;
+	/*-webkit-box-shadow: none;
+	box-shadow: none;*/
+	}
+
+	.dropdown-menu>li>a {
+	color: #0b0c0c;
+	font-weight: 600;
+	font-size: 16px;
+	}
+
+	.dropdown-menu>li>a:hover {
+	text-decoration: underline;
+	background-color: transparent;
+	}
+
+	.btn-group {
+	margin-bottom: 10px;
+	}
+
+	.btn-apply {
+	padding: 20px;
+	background-color: #28A197;
+	color: #fff;
+	text-align: center;
+	}
+
+	.btn-apply a, .btn-apply a:hover, .btn-apply a:focus, .btn-apply a:active {
+	font-family: inherit;
+	font-weight: 700;
+	line-height: 1.1;
+	color: inherit;
+	font-size: 24px;
+	background-color: transparent;
+	}
+
+	.form-control {
+	border-radius: 0 !important;
+	transition: none;
+	box-shadow: none;
+	height: 40px;
+	border: 1px solid #6f777b;
+	}
+
+	.form-control:focus {
+	border: 3px solid #ffbf47;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	}
