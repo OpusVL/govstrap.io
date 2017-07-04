@@ -1,14 +1,15 @@
 
 .navbar {
-	background-color: #0b0c0c;
+	background-color: $body-color;
 	border-radius: 0;
 	margin-bottom: 0;
 	text-align: left;
+	border: 0;
 
 	a {
 
 		&:hover {
-			color: #ffffff;
+			color: $white;
 			background-color: transparent;
 			text-decoration: none;
 		}
@@ -16,7 +17,7 @@
 
 	li {
 		a {
-			color: #ffffff;
+			color: $white;
 			font-size: 1em;
 			font-weight: normal;
 			text-transform: none;
@@ -26,17 +27,21 @@
 			&:hover {
 				background-color: transparent;
 				text-decoration: none;
-				border-bottom: 1px solid #ffffff;
+				border-bottom: 1px solid $white;
 			}
 		}
 
-
+		>.active {
+			a {
+				color: $link-active;
+			}
+		}
 	}
 
-	.navbar-brand	{
-		color: #ffffff;
+	.navbar-brand {
+		color: $white;
 		font-size: 1.9em;
-		line-height: 2em;
+		line-height: 1.9em;
 		padding-top: 0;
 		font-weight: normal;
 		text-transform: none;
@@ -44,10 +49,10 @@
 		text-align: left;
 
 		&:hover {
-			color: #ffffff;
+			color: $white;
 			background-color: transparent;
 			text-decoration: none;
-			border-bottom: 1px solid #ffffff;
+			border-bottom: 1px solid $white;
 		}
 	}
 
@@ -55,19 +60,51 @@
 		margin: 0 auto;
 		padding-left: 15px;
 		text-align: left;
+
+		.navbar-header {
+			display: inline-block;
+			width: 100%;
+			vertical-align: baseline;
+		}
+	}
+
+	.navbar-default {
+		border: 0;
+	}
+
+	.navbar-toggle {
+		border-color: $black;
 	}
 }
 
 .list-unstyled {
 	a {
-		color: #ffffff;
+		color: $white;
 		text-decoration: none;
 	}
 }
 
-.navbar li.active a { color: #1d8feb; }
-
-.navbar-nav li {
-	float: none;
-	display: inline-block;
+.navbar-nav {
+	li {
+		float: none;
+		display: inline-block;
 	}
+}
+
+
+.nav-pills > li > a {
+	border-radius: 0;
+
+	&:hover {
+		background-color: $bg-color;
+	}
+}
+
+
+.nav > li {
+	a {
+		&:focus {
+			background-color: transparent;
+		}
+	}
+}

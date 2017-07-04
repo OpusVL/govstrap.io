@@ -34,7 +34,7 @@ linters:
     enabled: true
 
   DeclarationOrder:
-    enabled: true
+    enabled: false
 
   DisableLinterReason:
     enabled: false
@@ -62,7 +62,7 @@ linters:
 
   HexLength:
     enabled: true
-    style: short # or 'long'
+    style: long # or 'short'
 
   HexNotation:
     enabled: true
@@ -103,7 +103,7 @@ linters:
 
   NestingDepth:
     enabled: true
-    max_depth: 3
+    max_depth: 4
     ignore_parent_selectors: false
 
   PlaceholderInExtend:
@@ -115,7 +115,7 @@ linters:
     max_properties: 10
 
   PropertySortOrder:
-    enabled: true
+    enabled: false
     ignore_unspecified: false
     min_properties: 2
     separate_groups: false
@@ -145,7 +145,7 @@ linters:
 
   SelectorDepth:
     enabled: true
-    max_depth: 3
+    max_depth: 4
 
   SelectorFormat:
     enabled: true
@@ -153,11 +153,11 @@ linters:
 
   Shorthand:
     enabled: true
-    allowed_shorthands: [1, 2, 3]
+    allowed_shorthands: [1, 2, 3, 4]
 
   SingleLinePerProperty:
     enabled: true
-    allow_single_line_rule_sets: true
+    allow_single_line_rule_sets: false
 
   SingleLinePerSelector:
     enabled: true
@@ -168,7 +168,7 @@ linters:
 
   SpaceAfterPropertyColon:
     enabled: true
-    style: aligned  # or 'no_space', or 'at_least_one_space', or 'one_space'
+    style: one_space   # or 'no_space', or 'at_least_one_space', or 'aligned'
 
   SpaceAfterPropertyName:
     enabled: true

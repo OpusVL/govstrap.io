@@ -1,9 +1,50 @@
 
+
+
 .hero-banner {
-	background-color: #005ea5;
-	color: #fff;
+	background-color: $secondary-link-color;
+	color: $white;
 	margin-bottom: 10px;
+
+	.upcoming-events {
+		background-color: $body-color;
+		padding: 15px 15px 30px;
+		margin-top: 30px;
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+
+			.date {
+				color: $date-color;
+				margin-bottom: 5px;
+				font-size: 12px;
+				font-style: italic;
+			}
+
+			li > a {
+				font-weight: 700;
+				color: $white;
+				}
+		}
+	}
+
+	.btn {
+		background-color: $body-color;
+		border: 1px solid $body-color;
+		color: $white;
+
+		&:focus {
+			background-color: $body-color;
+			color: $white;
+		}
+	}
+
+	.form {
+		margin-top: 20px;
+	}
 }
+
 
 .content {
 	margin: auto;
@@ -13,49 +54,18 @@
 	position: relative;
 }
 
-.hero-banner .upcoming-events {
-	background-color: #0b0c0c;
-	padding: 15px 15px 30px 15px;
-	margin-top: 30px;
-}
-
-.upcoming-events ul {
-	list-style-type: none;
-	padding-left: 0;
-  .date {
-  	color: #ccc;
-  	margin-bottom: 5px;
-  	font-size: 12px;
-  	font-style: italic;
-  }
-  li > a {
-  	font-weight: 700;
-  	color: #fff;
-  	}
-}
-
 .promo-banner {
-	background-color: #FFBF47;
+	background-color: $link-color;
 	padding: 20px 0 15px;
 	margin-bottom: 15px;
+
+	strong {
+		display: block;
+		font-weight: 600;
+	}
 }
 
-.promo-banner, .banner {
+.promo-banner,
+.banner {
 	margin-top: -10px;
-}
-
-.promo-banner strong {
-	display: block;
-	font-weight: 600;
-}
-
-.hero-banner .btn {
-	background-color: #0b0c0c;
-	border: 1px solid #0b0c0c;
-	color: #fff;
-}
-
-.hero-banner .btn:focus {
-	background-color: #0b0c0c;
-	color: #fff;
 }

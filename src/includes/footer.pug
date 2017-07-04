@@ -1,0 +1,64 @@
+section.container-fluid.footer
+  .content
+    .row.footer-top
+    .row.footer-bottom
+      .col-sm-2
+        a(href='http://opusvl.com/', target='_blank' rel="noreferrer noopener")
+          img(src='assets/img/OpusVL-square-logo-40-NoBG.png')
+      .col-sm-10
+        | govstrap.io is an
+        a(href='http://opusvl.com/', target='_blank' rel="noreferrer noopener") OpusVL
+        |  initiative.
+    .row.footer-bottom
+      .col-sm-2
+        a(href='https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/', target='_blank' rel="noreferrer noopener")
+          img(src='assets/img/ogl.png')
+      .col-sm-10
+        p All content is available under the
+          span
+            a(href='https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/', target='_blank' rel="noreferrer noopener") Open Government Licence v3.0
+          span , except where otherwise stated
+      .col-sm-10.col-sm-offset-2
+        p 
+          span Govstrap.io is not affiliated or endorsed by GDS, the UK Government or any official channels. It is a community project to help propagate the good work of GDS.
+        p
+          span Discover #Govstrap on
+          span 
+           a(href='https://twitter.com/search?q=%23govstrap' rel='noopener norefferer' target="_blank") Twitter.
+    
+    // Bootstrap core JavaScript
+    //   ==================================================
+    // Placed at the end of the document so the pages load faster 
+
+
+script(src='assets/js/jquery-3.2.1.js')
+script(src='assets/js/bootstrap.min.js')
+// [if IE 9]
+script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js')
+// <![endif]
+script(src='assets/js/govstrap.js')
+script(src='assets/js/prism.js')
+// IE10 viewport hack for Surface/desktop Windows 8 bug
+script(src='assets/js/ie10-viewport-bug-workaround.js')
+// Piwik
+script.
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.govstrap.io"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+  var u="//web-analytics.opusvl.com/";
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', 14]);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+noscript
+  p   
+    img(src='//web-analytics.opusvl.com/piwik.php?idsite=14', style='border:0;', alt='')
+  // End Piwik Code
+  // Piwik Image Tracker
+  p
+    img(src='http://web-analytics.opusvl.com/piwik.php?idsite=14&rec=1', style='border:0', alt='')
+  // End Piwik

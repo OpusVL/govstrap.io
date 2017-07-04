@@ -1,0 +1,52 @@
+
+.footer {
+	border-top: 5px solid $secondary-link-color;
+	background-color: $bg-color;
+	min-height: 300px;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+
+	a {
+		text-decoration: underline;
+		font-weight: normal;
+		color: $footer-links;
+
+		&:hover {
+			color: $footer-links;
+			text-decoration: underline;
+			font-weight: normal;
+		}
+
+		&:focus {
+			color: $footer-links;
+			text-decoration: underline;
+			font-weight: normal;
+		}
+
+		&:visited {
+			text-decoration: underline;
+			font-weight: normal;
+		}
+	}
+
+	.footer-top {
+		border-bottom: 1px solid $light-gray-blue;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+
+			> li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.scroll-top {
+	font-size: 15px;
+	font-weight: normal;
+}
