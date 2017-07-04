@@ -1,0 +1,23 @@
+
+@media (min-width: 768px) {
+	.navbar {
+		.container {
+			.navbar-brand {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+
+@media(max-width: 767px) {
+	.tweets {
+		ul {
+			padding-left: 0;
+		}
+
+		.more {
+			padding-left: 0;
+		}
+	}
+}

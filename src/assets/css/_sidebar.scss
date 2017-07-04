@@ -1,0 +1,26 @@
+
+.side-bar {
+	border-right: 1px solid $bg-color;
+	padding-right: 5px;
+
+	.bg-primary {
+
+		span {
+
+			a {
+				color: $white;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.side-bar-right {
+	border-left: 1px solid $bg-color;
+	border-right: 0;
+	padding-left: 5px;
+}
+
+.sidebar-category {
+	margin-bottom: 20px;
+}

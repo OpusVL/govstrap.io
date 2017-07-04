@@ -1,0 +1,71 @@
+
+
+
+.hero-banner {
+	background-color: $secondary-link-color;
+	color: $white;
+	margin-bottom: 10px;
+
+	.upcoming-events {
+		background-color: $body-color;
+		padding: 15px 15px 30px;
+		margin-top: 30px;
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+
+			.date {
+				color: $date-color;
+				margin-bottom: 5px;
+				font-size: 12px;
+				font-style: italic;
+			}
+
+			li > a {
+				font-weight: 700;
+				color: $white;
+				}
+		}
+	}
+
+	.btn {
+		background-color: $body-color;
+		border: 1px solid $body-color;
+		color: $white;
+
+		&:focus {
+			background-color: $body-color;
+			color: $white;
+		}
+	}
+
+	.form {
+		margin-top: 20px;
+	}
+}
+
+
+.content {
+	margin: auto;
+	max-width: 1140px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+
+.promo-banner {
+	background-color: $link-color;
+	padding: 20px 0 15px;
+	margin-bottom: 15px;
+
+	strong {
+		display: block;
+		font-weight: 600;
+	}
+}
+
+.promo-banner,
+.banner {
+	margin-top: -10px;
+}
