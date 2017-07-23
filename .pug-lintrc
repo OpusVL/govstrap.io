@@ -1,3 +1,4 @@
 {
-    "disallowAttributeInterpolation": true
+    "disallowAttributeInterpolation": true,
+    "validateIndentation": "2"
 }

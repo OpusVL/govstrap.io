@@ -1,4 +1,3 @@
-.DS_store
-prepros-6.config
-prepros-6.config
+bower_components
+build
 node_modules
