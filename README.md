@@ -2,8 +2,6 @@
 
 This Boilerplate Starter Kit is a Front-end web kit and boilerplate for building web apps or small sites reflecting the GOV.UK designs patterns using Pug(Jade) and Sass / Scss
 
-Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework
-
 Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework which allows developers with working knowledge of Bootstrap to build GOV.UK related sites without learning the details of the GDS methods. This software enables the developer to take advantage of the significant investments made by GDS in accessibility and device compatibility by re-using the GDS theme.
 
 The code was created as a by-product of the Summer 2016 <http://code4health.org> website update and subsequently released for re-use by others, therefore all code created for the govstrap.io project is available as Open Source software.
