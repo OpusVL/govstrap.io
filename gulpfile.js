@@ -145,7 +145,7 @@ gulp.task('data', () => gulp
   .pipe(gulp.dest(`${path.build}/data`))
 );
 
-/** 
+/**
  * Copy font files
  * -----------------------------------------------------------------------------
  */
@@ -318,7 +318,7 @@ gulp.task('views', () => gulp
 
 
 /**
- * Build prism and ie10 viewport bug workaround 
+ * Build prism and ie10 viewport bug workaround
  * -----------------------------------------------------------------------------
  */
 

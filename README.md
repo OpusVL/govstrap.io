@@ -1,6 +1,8 @@
-# govstrap.io
+# Govstrap.IO Boilerplate Starter Kit
 
-> Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework
+This Boilerplate Starter Kit is a Front-end web kit and boilerplate for building web apps or small sites reflecting the GOV.UK designs patterns using Pug(Jade) and Sass / Scss
+
+Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework
 
 Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework which allows developers with working knowledge of Bootstrap to build GOV.UK related sites without learning the details of the GDS methods. This software enables the developer to take advantage of the significant investments made by GDS in accessibility and device compatibility by re-using the GDS theme.
 
@@ -12,11 +14,6 @@ This repo contains the <http://govstrap.io> website code and examples.
 
 The site is created using apache SSI to simplify editing and management of the site. govstrap.io has also been integrated in to the <http://flexibase.io> CMS platform.
 
-<a><img src="http://res.cloudinary.com/dt4qeehms/image/upload/v1494509335/logo_njvnrz.png" height="300" align="right"></a>
-
-# Pug-Sass Boilerplate Starter Kit
-
-Pug-Sass Boilerplate Starter Kit is a Front-end web kit and boilerplate for building web apps or small sites using Pug(Jade) and Sass
 
 ## Inspiration
 
@@ -35,12 +32,11 @@ This project is based on a simple and fast workflow focused mainly on the front-
 -   Live browser reloading with `BrowserSync`
 -   Includes:
     -   [`Normalize.css`](https://necolas.github.com/normalize.css/) for CSS normalizations and common bug fixes
-    -   [`jQuery`](https://jquery.com/) via CDN and Bower installation
-    -   [`Bootstrap`](http://getbootstrap.com/) via CDN and Bower installation
+    -   [`jQuery`](https://jquery.com/) via Bower installation
+    -   [`Bootstrap`](http://getbootstrap.com/) via Bower installation
     -   [`html5shiv`](https://github.com/aFarkas/html5shiv) via CDN
     -   [`Respond`](https://github.com/scottjehl/Respond) via CDN
     -   [`gulpfile.js`](http://gulpjs.com/) with Gulp presets
-    -   `Sass variables` with with popular color palettes from [Material Design Palette](https://www.materialpalette.com/) and [Flat UI Colors](https://flatuicolors.com/)
 
 ## Requirements
 
@@ -63,12 +59,13 @@ First, clone the project:
 ```bash
 $ git clone https://github.com/Errec/pug-sass-boilerplate-starter-kit.git <my-project-name>
 ```
+or simply download from the GitHub repo
 
 Initialize `npm` on `<my-project-name>` directory
 
 ```bash
 $ cd <my-project-name>
-$ npm init
+$ npm install
 ```
 
 Install `Gulp` locally
@@ -77,83 +74,47 @@ Install `Gulp` locally
 $ sudo npm install gulp --save-dev
 ```
 
-Finally, install `Gulp` required dependencies
+Install `Bower` local dependencies used for the site
 
 ```bash
-$ sudo npm install gulp-uglify browser-sync gulp-plumber gulp-autoprefixer gulp-sass gulp-pug gulp-imagemin gulp-cache gulp-clean-css gulp-sourcemaps gulp-concat beeper gulp-util gulp-rename gulp-notify --save-dev
+$ sudo bower install jquery bootstrap font-awesome --save-dev
 ```
 
-![get start demo gif](http://res.cloudinary.com/dt4qeehms/image/upload/v1494619106/boilerplate/gif1.gif)
-
-Optionally, if you want to add external components and libraries, initialize `Bower` and install the dependencies to be used in your next project (e.g.: jQuery, Bootstrap, Modernizer).
+Finally, install `Gulp` required dependencies and developer dependencies
 
 ```bash
-$ bower init
-$ bower install jquery --save
-$ bower install bootstrap --save
+$ npm i -D autoprefixer  gulp-babel browser-sync gulp-changed del gulp-eslint gulp-include gulp-imagemin gulp-pug minimist gulp-cssnano gulp-postcss gulp-rename gulp-sass run-sequence gulp-uglify gulp-plumber gulp-util graceful-fs minimatch
 ```
+
 
 ### Running Your Local Server With Gulp
 
-After the installation of all requirements and its dependencies, your local web development environment is ready to run. Setup your initial files with `gulp setup`. This command is only necessary the first time the project is set or if the build folder is deleted.
+After the installation of all requirements and its dependencies, your local web development environment is ready to run. Setup your initial files with `gulp build`. This command is only necessary the first time the project is set or if the build folder is deleted.
 
 ```bash
-$ gulp setup
+$ gulp build
 ```
 
-Now run your local server using the `watch` task
+Now run your local server using the `server` task
 
 ```bash
-$ gulp watch
+$ gulp server
 ```
 
 This task will open the browser window usually with the URL <http://localhost:3000/>. Any saved changes made to the project files, will reload automatically the browser.
 
-![gulp task demo gif](http://res.cloudinary.com/dt4qeehms/image/upload/v1494619106/boilerplate/gif2.gif)
-
-## Project Structure
-
-The structure presented in this boilerplate is grouped primarily by folder content and file type. Please note that this structure is only meant to serve as a guide, it is by no means prescriptive.
-
-    .
-    ├── build/                      # Store processed/minified files - your project's deployable output
-    ├── img/                        # Main folder for image files
-    ├── js/                         # Main folder for JS files
-    │   ├── vendor/                 # Store third part library files (e.g.: jquery, bootstrap)
-    │   └── main.js                 # Index JS code goes here
-    ├── styles/                     # Main folder for cascade style files
-    │   ├── modules/                # Store third party modules and initializers (e.g.: normalize, reset)
-    │   ├── variables/              # Store sass variables files
-    │   └── main.scss               # Index Sass goes here
-    ├── templates/                  # Main folder for pug template files
-    ├── .bowerrc                    # Change bower library destination path from its default
-    ├── gulpfile.js                 # Setup Gulp tasks
-    └── index.pug                   # Index pug markup goes here
 
 ### The build/ Contents
 
     .
     ├── build/
-        ├── img/                    # Contains the compressed and optimized image files
-        ├── css/                    # Contains the concatenated/minified .css files and .map files
-        ├── js/                     # Contains the concatenated/minified/uglyfied .js files and .map files
-        │   └── vendor/             # Store third party libraries
+        ├── fonts/                    # Contains the font files used in the project
+        ├── images/                    # Contains the compressed and optimized image files
+        ├── styles/                    # Contains the concatenated/minified .css files and .map files
+        ├── scripts/                     # Contains the concatenated/minified/uglyfied .js files and normal js files
+        ├── vendors/             # Store third party libraries (jQuery, bootstrap, font-awesome)
         └── index.html              # Minified html index file
 
-## The Gulp plugins
+### Deployment
 
--   [Autoprefixer](https://github.com/postcss/autoprefixer) : Write CSS rules without vendor prefixes.
--   [beeper](https://github.com/sindresorhus/beeper) : Beeps when an error happens.
--   [BrowserSync](https://github.com/browsersync/browser-sync) : Keep multiple browsers in sync after file save.
--   [cache](https://github.com/jgable/gulp-cache) : Keeps an in-memory cache of files images so only changed images are compressed with Imagemin plugin.
--   [clean-css](https://github.com/jakubpawlowicz/clean-css) : CSS optimizer and minifier.
--   [concat](https://github.com/contra/gulp-concat) : Concatenates `.js` files into `bundle.js`.
--   [imagemin](https://github.com/sindresorhus/gulp-imagemin) : Minify PNG, JPEG, GIF and SVG images.
--   [notify](https://github.com/mikaelbr/gulp-notify) : Send error messages to Mac Notification Center, Linux notifications or Windows >= 8.
--   [plumber](https://github.com/floatdrop/gulp-plumber) : Prevent pipe breaking caused by errors from gulp plugins.
--   [Pug](https://github.com/pugjs/gulp-pug) : Compile your Pug templates into HTML.
--   [rename](https://github.com/hparra/gulp-rename) : Rename minified files adding `.min` suffix.
--   [SASS](https://github.com/dlmanning/gulp-sass) : Compile your SASS or SCSS into CSS.
--   [sourcemaps](https://github.com/floridoo/gulp-sourcemaps) : Create CSS and JavaScript map files to debug the code within compressed files.
--   [uglify](https://github.com/terinjokes/gulp-uglify) : Minify JavaScript files.
--   [gutil](https://github.com/gulpjs/gulp-util) : Log the error message with red highlighting for easier reading.
+All you need to do is copy the content of the build folder into your hosting account and you are set.
