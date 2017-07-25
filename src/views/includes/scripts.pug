@@ -1,0 +1,69 @@
+//- JavaScript
+case env
+  when "dev"
+    script(src="/vendors/bundle.js")
+    script(src="/scripts/govstrap.js")
+    // [if IE 9]
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js')
+    // <![endif]
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script(src='scripts/ie10-viewport-bug-workaround.js')
+    // Piwik
+    script.
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.govstrap.io"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+      var u="//web-analytics.opusvl.com/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 14]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+
+    noscript
+      p   
+      img(src='//web-analytics.opusvl.com/piwik.php?idsite=14', style='border:0;', alt='')
+      // End Piwik Code
+      // Piwik Image Tracker
+      p
+      img(src='http://web-analytics.opusvl.com/piwik.php?idsite=14&rec=1', style='border:0', alt='')
+      // End Piwik
+
+  when "stage"
+  when "prod"
+
+    // Bootstrap core JavaScript
+    //   ==================================================
+    // Placed at the end of the document so the pages load faster 
+
+    script(src="/vendors/bundle.min.js")
+    script(src="/scripts/govstrap.min.js")
+    // [if IE 9]
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js')
+    // <![endif]
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script(src='scripts/ie10-viewport-bug-workaround.js')
+    // Piwik
+    script.
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.govstrap.io"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//web-analytics.opusvl.com/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 14]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+
+    noscript
+      p   
+        img(src='//web-analytics.opusvl.com/piwik.php?idsite=14', style='border:0;', alt='')
+      // End Piwik Code
+      // Piwik Image Tracker
+      p
+        img(src='http://web-analytics.opusvl.com/piwik.php?idsite=14&rec=1', style='border:0', alt='')
+      // End Piwik

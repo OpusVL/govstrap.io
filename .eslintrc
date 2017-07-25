@@ -1,3 +1,13 @@
 {
-    "extends": "eslint"
+  // "extends": "airbnb-base",
+   "parserOptions": {
+          "ecmaVersion": 6,
+        },
+  "globals": {
+
+    "$",
+    "jQuery",
+    "document",
+    "window",
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "govstrap.io",
+  "description": "> Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework",
+  "authors": [
+    "JohnMica <liviumica@me.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bootstrap",
+    "font-awesome",
+    "webpack",
+    "govstrap"
+  ],
+  "homepage": "https://github.com/JohnMica/govstrap.io",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  },
+  "ignore": []
+}
