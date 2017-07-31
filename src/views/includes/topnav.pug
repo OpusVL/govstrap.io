@@ -1,7 +1,7 @@
-nav.navbar.navbar-default
-  .container.navbar-wrapper
+nav.navbar.navbar-default#navbar(role='navigation')
+  .content.navbar-wrapper
     .navbar-header
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse', aria-expanded='false', aria-controls='navbar')
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
@@ -9,23 +9,20 @@ nav.navbar.navbar-default
       a.navbar-brand(href='/') GOVSTRAP.io
 
       // Collect the nav links, forms, and other content for toggling
-      #navbar.collapse.navbar-collapse
-        ul.nav.navbar-nav
+      .collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
           li
             a(href='https://code4health.org/' target='_blank' rel='noopener norefferer')
               | Code 4 Health
-
           li
             a(href='https://google.com/' target='_blank' rel='noopener norefferer')
               | Google
-
           li
             a(href='https://getbootstrap.org/' target='_blank' rel='noopener norefferer')
               | Bootstrap    
           li
             a(href='https://jquery.org/' target='_blank' rel='noopener norefferer')
               | jQuery
-
           li
             a(href='https://webpack.org/' target='_blank' rel='noopener norefferer')
               | Webpack

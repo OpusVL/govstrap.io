@@ -1,110 +1,144 @@
+@import 'colors';
+
 
 .navbar {
-	background-color: $body-color;
-	border-radius: 0;
-	margin-bottom: 0;
-	text-align: left;
-	border: 0;
+  background-color: $black;
+  border-radius: 0;
+  margin-bottom: 0;
+  text-align: center;
 
-	a {
 
-		&:hover {
-			color: $white;
-			background-color: transparent;
-			text-decoration: none;
-		}
+
+  > .navbar-wrapper {
+    // margin: 0;
+    // padding-left: 30px;
+		// .navbar-header {
+		// 	padding-left: 15px;
+		// }
 	}
 
-	li {
-		a {
-			color: $white;
-			font-size: 1em;
-			font-weight: normal;
-			text-transform: none;
-			line-height: 2em;
-			text-decoration: none;
+  li {
+    > a {
+      color: $white !important;
+      font-size: 1.1em;
+      font-weight: 400;
+      // line-height: 2em;
+      text-decoration: none;
+      text-transform: capitalize;
 
-			&:hover {
-				background-color: transparent;
-				text-decoration: none;
-				border-bottom: 1px solid $white;
-			}
-		}
+      &:hover {
+        background-color: transparent;
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
 
-		>.active {
-			a {
-				color: $link-active;
-			}
-		}
-	}
+  .navbar-brand {
+    color: $white;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 2em;
 
-	.navbar-brand {
-		color: $white;
-		font-size: 1.9em;
-		line-height: 1.9em;
-		padding-top: 0;
-		font-weight: normal;
-		text-transform: none;
-		text-decoration: none;
-		text-align: left;
+    &:hover {
+      background-color: transparent;
+      color: $white;
+      text-decoration: underline;
+    }
 
-		&:hover {
-			color: $white;
-			background-color: transparent;
-			text-decoration: none;
-			border-bottom: 1px solid $white;
-		}
-	}
+    a {
+      color: $white;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: capitalize;
 
-	.navbar-wrapper {
-		margin: 0 auto;
-		padding-left: 15px;
-		text-align: left;
+      }
+  }
 
-		.navbar-header {
-			display: inline-block;
-			width: 100%;
-			vertical-align: baseline;
-		}
-	}
+  .active {
+    a {
+      color: $link-active;
+    }
+  }
 
-	.navbar-default {
-		border: 0;
-	}
-
-	.navbar-toggle {
-		border-color: $black;
-	}
+  // .navbar-header {
+  //   width: 100%;
+  //   text-align: center;
+  // }
 }
 
-.list-unstyled {
-	a {
-		color: $white;
-		text-decoration: none;
-	}
+.navbar-default {
+  border: 0;
+  border-color: transparent;
+
+  .navbar-toggle {
+    border-color: $black;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      background-color: transparent;
+    }
+  }
 }
 
-.navbar-nav {
-	li {
-		float: none;
-		display: inline-block;
-	}
+// .navbar-nav {
+//   display: inline-block;
+//   float: right;
+//
+//   >li {
+//     display: inline-block;
+//     float: left;
+//   }
+// }
+
+.header-bar {
+  border-bottom: 10px solid $secondary-link-color;
+  height: 10px;
+  margin-bottom: 30px;
 }
 
+.nav {
 
-.nav-pills > li > a {
-	border-radius: 0;
-
-	&:hover {
-		background-color: $bg-color;
-	}
+  >li {
+    >a {
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
 }
 
+.login-form {
+  background-color: $code-bg;
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 15px 30px;
 
-.nav > li {
-	a {
-		&:focus {
-			background-color: transparent;
-		}
-	}
+}
+
+.navbar-collapse.in {
+
+  float: none;
+  width: 100%;
+  // text-align: center;
+
+  .navbar-nav {
+    display: block;
+    // width: 100%;
+    float: none;
+
+    li {
+      float: none;
+      display: block;
+      width: 100%;
+
+      // a {
+      //   width: 100%;
+      // }
+    }
+  }
 }

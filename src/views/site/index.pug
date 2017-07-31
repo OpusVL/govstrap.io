@@ -1,6 +1,4 @@
 extends /extends/layout
-include /mixins/sample
-
 
 block content
   section.container-fluid.hero-banner
@@ -11,11 +9,14 @@ block content
           p Govstrap.io is a port of the GOV.UK standard website theme to the bootstrap framework. This enables Bootstrap websites to be converted to the GDS design in minutes.
           p Govstrap.io allows websites to be fully responsive and display comfortably across all modern devices, re-using the Government Digital Services investment in user experience and accessibility.
           p The Govstrap.io project is available as Open Source and adheres to the UK Public Sector Open Source and Open Standards policy and guidance.
-          form.form-horizontal
-            .form-group
-              input.form-control(type='text', placeholder='Search')
-              button.form-control(type='submit') 
-                i.glyphicon.glyphicon-search
+          form.form-inline
+            .form-group.btn-group
+              .sr-only(for='SearchBox') Search Box
+              .input-group
+                input.form-control(type='text' id='SearchBox' placeholder='Search' aria-label='searchbox')
+                .input-group-addon
+                  button(type="submit") 
+                    i.fa.fa-search.fa-inverse
 
         aside.col-xs-4.col.sm-4.col-md-4.col-lg-4.inverse
           h5 Popular items
@@ -53,27 +54,27 @@ block content
     .content
       .row
         .col-sm-4
-          h4
+          h3
             a(href='compliance.html') Re-use to become compliant
           p Investment in accessibility is important - it makes your sites easy for your users, work across devices, and is a compliance requirement
 
         .col-sm-4
-          h4
+          h3
             a(href='developer-information-and-resources.html') Developer resources
           p Resources for developers and integrators when using Govstrap.io - CSS, forms and components.
         .col-sm-4
-          h4
+          h3
             a(href='professional-services-and-procurement.html') Professional services
           p Access professional services to help you implement Govstrap.io
       .row
 
 
         .col-sm-4
-          h4
+          h3
             a(href='faq.html') FAQ
           p How is Govstrap.io implemented? Who is behind it? - and other questions
         .col-sm-4
-          h4
+          h3
             a(href='quickstart.html') Govstrap.io quick-start guide
           p 3 steps to implementing Govstrap.io 
           span 1. Get Bootstrap;  
@@ -81,23 +82,23 @@ block content
             span 2. Add Govstrap.io; 
             span 3. You are done!
         .col-sm-4
-          h4
+          h3
             a(href='forms.html') Forms
           p Examples of forms, and how to build your own
 
       .row
 
         .col-sm-4
-          h4
+          h3
             a(href='css.html') CSS
           p Details some CSS rules you won't find in the regular Bootstrap
         .col-sm-4
-          h4
+          h3
             a(href='components.html') Components
           p Various components, such as dropdowns and sidebars
 
         .col-sm-4
-          h4
+          h3
             a(href='examples.html') Examples
           p No CSS framework is complete without some examples to help "bootstrap" your project
 

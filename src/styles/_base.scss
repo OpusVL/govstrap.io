@@ -1,15 +1,40 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
+
 body {
-  color      : $body-color;
-  font-family: 'Open Sans', sans-serif;
-  font-size  : 16px;
+  color: $body-color;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 48px;
 }
 
-.row {
-  margin: 10px 0 15px;
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
 }
 
 section {
@@ -23,11 +48,11 @@ section {
 a {
   &:focus {
     background-color: $link-color;
-    outline         : 3px solid $link-color;
+    outline: 3px solid $link-color;
   }
 
   &:link {
-    color          : $secondary-link-color;
+    color: $secondary-link-color;
     text-decoration: underline;
   }
 
@@ -45,85 +70,52 @@ a {
 }
 
 .btn {
-  color           : $white;
-  border          : 3px solid $btn-color;
-  border-radius   : 0;
   background-color: $btn-color;
-  box-shadow      : 0 2px 0 $box-shadow;
-  font-weight     : 600;
+  border: 3px solid $btn-color;
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 0 $box-shadow;
+  box-shadow: 0 2px 0 $box-shadow;
+  color: $white;
+  font-weight: 600;
 
   &:hover {
-    color           : $white;
-    border          : 3px solid $btn-bg;
     background-color: $btn-bg;
-  }
-
-  &.active {
-    &.focus,
-    &:focus {
-      border          : 3px solid $link-color;
-      background-color: $btn-bg;
-      outline         : none;
-      outline-offset  : 0;
-      color           : $white;
-    }
-  }
-
-  &.focus,
-  &:focus {
-    border          : 3px solid $link-color;
-    background-color: $btn-bg;
-    outline         : none;
-    outline-offset  : 0;
-    color           : $white;
-  }
-
-  &:active {
-    border          : 3px solid $link-color;
-    background-color: $btn-bg;
-    outline         : none;
-    outline-offset  : 0;
-    color           : $white;
-
-    &.focus,
-    &:active,
-    &:focus {
-      border          : 3px solid $link-color;
-      background-color: $btn-bg;
-      outline         : none;
-      outline-offset  : 0;
-      color           : $white;
-    }
+    border: 3px solid $btn-bg;
+    color: $white;
   }
 }
 
-.btn-default {
-  &.active {
-    &.focus,
-    &:focus {
-      border: 0;
-    }
-  }
+.btn.active,
+.btn.active.focus,
+.btn.active:active,
+.btn.active:focus,
+.btn.focus,
+.btn:active,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  background-color: $btn-bg;
+  border: 3px solid $link-color;
+  color: $white;
+  outline: none;
+  outline-offset: 0;
+}
 
-  &.focus,
-  &:focus {
-    border: 0;
-  }
-
-  &:active {
-    border: 0;
-
-    &.focus,
-    &:active,
-    &:focus {
-      border: 0;
-    }
-  }
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover {
+  border: 0;
 }
 
 .quick-card {
-  border-top   : 5px solid $secondary-link-color;
-  padding-top  : 3px;
+  border-top: 5px solid $secondary-link-color;
+  padding-top: 3px;
   margin-bottom: 60px;
 }
 
@@ -132,10 +124,10 @@ a {
     list-style-type: none;
 
     > li {
-      display         : inline-block;
-      padding         : 16px;
-      margin-bottom   : 10px;
-      max-width       : 468px;
+      display: inline-block;
+      padding: 16px;
+      margin-bottom: 10px;
+      max-width: 468px;
       background-color: $tweet-bg;
 
       a {
@@ -149,15 +141,15 @@ a {
   }
 
   .recent-tweets {
-    border-right    : 5px solid $body-color;
-    padding         : 10px 10px 20px;
+    border-right: 5px solid $body-color;
+    padding: 10px 10px 20px;
     background-color: $secondary-link-color;
-    color           : $white;
+    color: $white;
 
     a {
       color: $white;
     }
-  }
+}
 
   .more {
     padding-left: 40px;
@@ -172,12 +164,12 @@ aside {
   border-radius: 0;
 
   > li > a {
-    color      : $body-color;
+    color: $body-color;
     font-weight: 600;
-    font-size  : 16px;
+    font-size: 16px;
 
     &:hover {
-      text-decoration : underline;
+      text-decoration: underline;
       background-color: transparent;
     }
   }
@@ -188,27 +180,27 @@ aside {
 }
 
 .btn-apply {
-  padding         : 20px;
+  padding: 20px;
   background-color: $btn-apply;
-  color           : $white;
-  text-align      : center;
+  color: $white;
+  text-align: center;
 
   a {
-    font-family     : inherit;
-    font-weight     : 700;
-    line-height     : 1.1;
-    color           : inherit;
-    font-size       : 24px;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 24px;
     background-color: transparent;
 
     &:active,
     &:focus,
     &:hover {
-      font-family     : inherit;
-      font-weight     : 700;
-      line-height     : 1.1;
-      color           : inherit;
-      font-size       : 24px;
+      font-family: inherit;
+      font-weight: 700;
+      line-height: 1.1;
+      color: inherit;
+      font-size: 24px;
       background-color: transparent;
     }
   }
@@ -222,20 +214,32 @@ aside {
   label {
     cursor: pointer;
 
+    .block-label {
+      padding-left: 35px;
+    }
+
+    &:hover {
+      label {
+        .block-label {
+          border: 1px solid $body-color;
+        }
+      }
+    }
+
     span {
       line-height: 24px;
 
       &::before {
         margin-right: 4px;
         padding-left: 2px;
-        padding-top : 2px;
-        width       : 21px;
-        height      : 21px;
-        border      : 1px solid $code-color;
-        display     : inline-block;
-        line-height : 15px;
-        content     : '';
-        float       : left;
+        padding-top: 2px;
+        width: 21px;
+        height: 21px;
+        border: 1px solid $code-color;
+        display: inline-block;
+        line-height: 15px;
+        content: '';
+        float: left;
       }
     }
 
@@ -245,23 +249,27 @@ aside {
 
         &:checked + span::before {
           font-family: 'Glyphicons Halflings';
-          content    : '\e013';
-          color      : $body-color;
+          content: '\e013';
+          color: $body-color;
+          }
         }
       }
     }
-  }
 }
 
 .form-control {
   border-radius: 0 !important;
-  transition   : none;
-  box-shadow   : none;
-  height       : 40px;
-  border       : 1px solid $code-color;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 40px;
+  border: 1px solid $code-color;
 
   &:focus {
-    border    : 3px solid $link-color;
+    border: 3px solid $link-color;
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -274,9 +282,38 @@ aside {
   }
 }
 
+.phase-tag-beta {
+  background-color: $phase-tag-beta;
+  color: $white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.1428571429;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 2px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.phase-tag-alpha {
+  background-color: $phase-tag-alpha;
+  color: $white;
+  display: inline-block;
+  font-family: 'nta', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.1428571429;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 2px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 code {
   background-color: $code-bg;
-  color           : $code-color;
+  color: $code-color;
 }
 
 pre {
@@ -285,4 +322,69 @@ pre {
 
 input {
   outline: none !important;
+}
+
+.well {
+  background-color: $well;
+  border: 1px solid $date-color;
+  border-radius: 0;
+}
+
+.block-label {
+  background-color: $bg-color;
+  border: 1px solid $bg-color;
+  line-height: 29px;
+  padding: 10px 30px 12px 35px;
+  vertical-align: middle;
+
+  .checked {
+    background-color: $white;
+    border: 1px solid $body-color;
+  }
+
+  &:hover {
+    border: 1px solid $body-color;
+  }
+
+  input {
+    [type=radio] {
+      height: 29px;
+      margin-right: 10px;
+      position: relative;
+      vertical-align: bottom;
+      width: 29px;
+  }
+
+    [type=checkbox] {
+      height: 29px;
+      margin-right: 10px;
+      position: relative;
+      vertical-align: bottom;
+      width: 29px;
+
+      &:checked+label {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.js-hidden {
+  display: none;
+}
+
+.panel-left {
+  border-left: 5px solid $light-gray-blue;
+  padding-left: 20px;
+}
+
+.btn-start,
+.btn-start:active,
+.btn-start:focus {
+  background-image: url('../img/icon-pointer.png');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  padding-right: 3.157895em;
+  text-transform: none;
 }

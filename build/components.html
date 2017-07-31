@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>Govstrap.io - Bootstrapped GDS theme for GOV.UK related websites</title>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
+  <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Finally, govstrap styling-->
+  <link href="styles/govstrap.css" rel="stylesheet">
+  <!-- Finally, prism stylesheet for coloring the example markup-->
+  <link href="styles/prism.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+  <!-- [if IE 9] -->
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <!-- <![endif]-->
+</head>
+<section class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <aside class="col-sm-4">
+        <div class="side-bar">
+          <h4 class="bg-primary">Quick Links</h4>
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#buttons">Buttons</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <div class="col-sm-8">
+      <h1>Components</h1>
+      <p>Sidebars, panels, buttons, widgets, and all that good stuff.</p><a name="buttons"></a>
+      <h3>Buttons</h3>
+      <p>GOV.UK doesn't really have the button colour choice that Bootstrap has, so we've just worried about styling <code>btn-primary</code>. This will give you <code>btn-primary btn-start</code>, which adds the chevron you'll find on their start buttons</p>
+      <div class="phase-tag-alpha">Example</div>
+      <div class="well">
+        <button class="btn btn-primary">btn-primary</button>
+        <button class="btn btn-primary btn-start">btn-primary btn-start</button>
+      </div>
+      <pre class="language-markup">&lt;code class="language-markup"&gt;
+  &lt;button class=&quot;btn btn-primary&quot;&gt;btn-primary&lt;/button&gt;
+  &lt;button class=&quot;btn btn-primary btn-start&quot;&gt;btn-primary btn-start&lt;/button&gt;
+&lt;/code&gt;
+
+</pre><a name="fields-select"></a>
+      <h3>Select field <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+      <div class="phase-tag-alpha">Example</div>
+      <div class="well">
+        <form class="form">
+          <div class="form-group">
+            <label class="control-label" for="myOptions">Pick an option</label>
+            <select class="form-control" id="myOptions">
+              <option>Something</option>
+              <option>More things</option>
+              <option>Even more</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <pre class="language-markup">&lt;code class="language-markup"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label class="control-label" for="myOptions">Pick an option&lt;/label&gt;
+      &lt;select class="form-control" id="myOptions"&gt;
+        &lt;option>Something&lt;/option&gt;
+        &lt;option>More things&lt;/option&gt;
+        &lt;option>Even more&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/code&gt;
+
+
+</pre><a name="fields-radio"></a>
+      <h3>Radio Buttons <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+      <p>The main thing to keep in mind with large checkboxes and radio buttons, is that <code>.block-label</code> controls the size of the field. Excluding that class gives you a regular element.</p>
+      <div class="phase-tag-alpha">Example</div>
+      <div class="well">
+        <form class="form">
+          <div class="form-group">
+            <label class="radio-inline block-label">
+              <input type="radio" name="optradio">Yes
+            </label>
+            <label class="radio-inline block-label">
+              <input type="radio" name="optradio">No
+            </label>
+            <label class="radio-inline block-label">
+              <input type="radio" name="optradio">Can you repeat the question?
+            </label>
+          </div>
+        </form>
+      </div>
+      <pre class="language-markup">&lt;code class="language-markup"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label class="radio-inline block-label"&gt;
+      &lt;input type="radio" name="optradio">Yes
+    &lt;/label&gt;
+    &lt;label class="radio-inline block-label"&gt;
+      &lt;input type="radio" name="optradio"&gt;No
+    &lt;/label&gt;
+    &lt;label class="radio-inline block-label"&gt;
+      &lt;input type="radio" name="optradio"&gt;Can you repeat the question?
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/code&gt;</pre><a name="fields-checkbox"></a>
+      <h3>Checkboxes <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+      <p>Just like the radio buttons, omitting the <code>block-label</code> would cause it to render standard checkboxes</p>
+      <div class="phase-tag-alpha">Example</div>
+      <div class="well">
+        <form class="form">
+          <div class="form-group">
+            <div class="checkbox">
+              <label class="block-label">
+                <input type="checkbox" name="fruits"> Watermelon
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox">
+              <label class="block-label">
+                <input type="checkbox" name="fruits"> Oranges
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox">
+              <label class="block-label">
+                <input type="checkbox" name="fruits"> Apples
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <pre class="language-markup">&lt;code class="language-markup"&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      &lt;label class=&quot;block-label&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;fruits&quot;&gt; Watermelon
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      &lt;label class=&quot;block-label&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;fruits&quot;&gt; Oranges
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      &lt;label class=&quot;block-label&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;fruits&quot;&gt; Apples
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/code&gt;
+</pre><a name="cond-fields"></a>
+      <h3>Conditional fields <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+      <p>Sometimes you'll only want to show a field when a specific option has been selected. GOVstrap can handle that right out of the box</p>
+      <p>Just add the <code>js-togggle</code> class to the form-group holding the radio buttons. <code>data-target</code> tells js-toggle the targets id. <code>data-toggle="true"</code> to the radio button.</p>
+      <p>Finally, the hidden field must have a class of <code>js-hidden</code>, which will hide it by default until it's ready to be shown</p>
+      <div class="phase-tag-alpha">Example</div>
+      <div class="well">
+        <form class="form">
+          <div class="form-group">
+            <h4>Do you know their National Insurance number?</h4>
+          </div>
+          <div class="form-group js-toggle" data-target="nin">
+            <label class="radio-inline block-label">
+              <input type="radio" data-toggle="true" name="hasnin">Yes
+            </label>
+            <label class="radio-inline block-label">
+              <input type="radio" name="hasnin">No
+            </label>
+          </div>
+          <div class="form-group js-hidden panel-left">
+            <label class="control-label" for="nin">National Insurance number</label>
+            <input class="form-control" id="nin" type="text">
+          </div>
+        </form>
+      </div>
+      <pre class="language-markup">&lt;code class="language-markup"&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;h4&gt;Do you know their National Insurance number?&lt;/h4&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;form-group js-toggle&quot; data-target=&quot;nin&quot;&gt;
+    &lt;label class=&quot;radio-inline block-label&quot;&gt;
+      &lt;input type=&quot;radio&quot; data-toggle=&quot;true&quot; name=&quot;hasnin&quot;&gt;Yes
+    &lt;/label&gt;
+    &lt;label class=&quot;radio-inline block-label&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;hasnin&quot;&gt;No
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;form-group js-hidden panel-left&quot;&gt;
+    &lt;label class=&quot;control-label&quot; for=&quot;nin&quot;&gt;
+      National Insurance number
+    &lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;nin&quot;&gt;
+  &lt;/div&gt;
+&lt;/code&gt;</pre>
+    </div>
+  </div>
+</section>

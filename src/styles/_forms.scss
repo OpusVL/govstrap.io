@@ -2,49 +2,50 @@
 
 
 .form-group {
-	float: none;
-	padding-right: 1em;
-	text-align: left;
-	width: 100%;
+  float: none;
+  padding-right: 1em;
+  text-align: left;
+  width: 100%;
 
-	label {
-		display: inline-block;
-		text-align: left;
-	}
+  label {
+    display: inline-block;
+    text-align: left;
+  }
 
-	input {
-		display: block;
-		max-width: 100%;
-		height: auto;
-		outline-offset: 0;
-		font-size: 1.2em;
-		line-height: 1.5;
-		vertical-align: top;
-		text-align: left;
-	}
+  input {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    outline-offset: 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+    vertical-align: top;
+    text-align: left;
+  }
 
-	button {
-		height: 40px;
-		display: inline-block;
-		vertical-align: baseline;
-		box-sizing: border-box;
-		background-color: $black;
-		color: $white;
-		border: 0;
-		overflow: hidden;
-		padding: 6px;
-		font-size: 1.1em;
-	}
+  button {
+    height: 40px;
+    display: inline-block;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: $black;
+    color: $white;
+    border: 0;
+    overflow: hidden;
+    padding: 6px;
+    font-size: 1.1em;
+  }
 
-	p {
-		text-align: left;
-	}
+  p {
+    text-align: left;
+  }
 }
 
 aside {
-	.inverse {
-		background-color: $black;
-		display: block;
-		padding-left: 1em;
-	}
+  .inverse {
+    background-color: $black;
+    display: block;
+    padding-left: 1em;
+  }
 }

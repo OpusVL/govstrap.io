@@ -1,6 +1,6 @@
 @import '../../bower_components/bootstrap/dist/css/bootstrap';
 @import '../../bower_components/font-awesome/css/font-awesome';
-@import 'colors';
+
 @import 'base';
 @import 'navbar';
 @import 'hero';
@@ -115,7 +115,7 @@
 
     &[type=checkbox] {
       position      : relative;
-      display       : inline-block;
+      // display       : inline-block;
       vertical-align: bottom;
       height        : 29px;
       width         : 29px;
