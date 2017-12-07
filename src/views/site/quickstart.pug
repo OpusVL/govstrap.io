@@ -1,40 +1,43 @@
-include /includes/head 
+extends /extends/layout
 
-.container
-  .row
-    .col-xs-12.col-sm-12.col-md-12.col-lg-12
-      h1 Govstrap.io quickstart guide
+block content
+  section.container-fluid.quickstart
+    .row
+      aside.col-sm-3.col-lg-2.col-xl-2.offset-lg-1.offset-xl-2
+        .side-bar.side-bar-left
 
-      h4 1. Get Bootstrap
+      article.col-sm-9.col-lg-8.col-xl-6
+        h1 Govstrap.io quickstart guide
 
-      p If you're already using Bootstrap to build your site then you're all set to style it with Govstrap.
+        h4 1. Get Bootstrap
 
-      p If you don't have Bootstrap yet, download it from 
-        a(href='https://getbootstrap.com/') getbootstrap.com.
-        span  Govstrap is built for Bootstrap version 3.3.7.
+        p If you're already using Bootstrap to build your site then you're all set to style it with Govstrap.
 
-      h4 2. Add Govstrap
+        p If you don't have Bootstrap yet, download it from 
+          a(href='https://getbootstrap.com/') getbootstrap.com.
+          span  Govstrap is built for Bootstrap version 4.0.0-beta2.
 
-      p Download the Govstrap CSS file from 
-        a(href='https://github.com/OpusVL/govstrap.io/blob/master/govstrap.io/assets/css/govstrap.css')  GitHub.
+        h4 2. Add Govstrap
 
-      p Load it after Bootstrap's CSS, like this:
+        p Download the Govstrap CSS file from 
+          a(href='https://github.com/OpusVL/govstrap.io/blob/master/govstrap.io/assets/css/govstrap.css')  GitHub.
 
-      br
-      .phase-tag-alpha 
-        span Example
-      br
-      br
-      pre.language-markup.
-        &lt;code class="language-markup"&gt;
-          &lt;!-- Bootstrap core CSS --&gt;
-          &lt;link href="bootstrap.min.css" rel="stylesheet"&gt;
+        p Load it after Bootstrap's CSS, like this:
 
-          &lt;!-- Govstrap styling --&gt;
-          &lt;link href="govstrap.css" rel="stylesheet"&gt;
-        &lt;/code&gt;  
+        br
+        .phase-tag-alpha 
+          span Example
+        br
+        br
+        pre.language-markup
+          code.language-markup.
+            &lt;!-- Bootstrap core CSS --&gt;
+            &lt;link href="bootstrap.min.css" rel="stylesheet"&gt;
 
-      h4 3. You're done!
-      p You can now use all of the Govstrap classes and elements in your site.
+            &lt;!-- Govstrap styling --&gt;
+            &lt;link href="govstrap.css" rel="stylesheet"&gt;
+       
 
-include /includes/footer 
+        h4 3. You're done!
+        p You can now use all of the Govstrap classes and elements in your site.
+    

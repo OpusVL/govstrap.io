@@ -24,3 +24,22 @@
 .sidebar-category {
 	margin-bottom: 20px;
 }
+
+
+.nav-pills {
+
+	>li {
+		>a {
+			border-radius: 0;
+
+			&:hover {
+				background-color: $bg-color;
+			}
+		}
+	}
+
+}
+
+.sidebar-category {
+	margin-bottom: 20px;
+}

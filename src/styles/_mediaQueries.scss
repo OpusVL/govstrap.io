@@ -1,23 +1,51 @@
 
-@media (min-width: 768px) {
-	.navbar {
-		.container {
-			.navbar-brand {
-				margin-left: 0;
-			}
-		}
-	}
+@media(max-width: 767px) {
+
+  .hero-banner {
+    aside {
+      margin-right: 15px;
+      height: auto;
+      background-color: transparent;
+
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .navbar-collapse.collapsing {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .tweets {
+    ul {
+      padding-left: 0;
+    }
+
+    .more {
+      padding-left: 0;
+    }
+  }
 }
 
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: inline-block !important;
+  }
+}
 
-@media(max-width: 767px) {
-	.tweets {
-		ul {
-			padding-left: 0;
-		}
+@media (min-width: 1140px) {
+  .navbar {
+    > .navbar-wrapper {
+      padding-left: 0;
+    }
+  }
+}
 
-		.more {
-			padding-left: 0;
-		}
-	}
+@media (min-width: 640px) {
+  p {
+    font-size: 18px;
+  }
 }
