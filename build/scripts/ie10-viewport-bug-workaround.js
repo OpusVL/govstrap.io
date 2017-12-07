@@ -1,3 +1,5 @@
+'use strict';
+
 /*!
  * IE10 viewport hack for Surface/desktop Windows 8 bug
  * Copyright 2014-2015 Twitter, Inc.
@@ -9,13 +11,10 @@
 
 (function () {
   'use strict';
+
   if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     var msViewportStyle = document.createElement('style');
-    msViewportStyle.appendChild(
-      document.createTextNode(
-        '@-ms-viewport{width:auto!important}'
-      )
-    );
+    msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
     document.querySelector('head').appendChild(msViewportStyle);
   }
 })();
