@@ -110,7 +110,7 @@ gulp.task('server', () => {
  */
 
 gulp.task('build', (callback) => sequence(
-  ['clean'], ['assets'], ['scripts'], ['styles'], ['prismCSS'], ['prismJS'], ['ie10CSS'], ['ie10JS'], ['vendors'], ['views'],
+  ['clean'], ['vendors'], ['assets'], ['scripts'], ['styles'], ['prismCSS'], ['prismJS'], ['ie10CSS'], ['ie10JS'], ['views'],
   callback
 ));
 

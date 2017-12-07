@@ -1,9 +1,32 @@
-include /includes/head
+extends /extends/layout
 
-section.container-fluid
-  .content
+block content
+  section.container-fluid.services
     .row
-      .col-xs-12.col-sm-8.col-md-8
+      aside.col-sm-3.col-lg-2.col-xl-2.offset-lg-1.offset-xl-2
+
+        .side-bar.side-bar-left
+
+          h4.bg-primary Quick Links
+
+          ul.nav.nav-pills.nav-stacked
+            li
+              a(href='#scoping') Scoping
+            li
+              a(href='#staging') Staging
+            li
+              a(href='#testing') Testing
+            li
+              a(href='#project-management') Project management
+            li
+              a(href='#support-and-training') Support and training
+            li        
+              a(href='#hosting') Hosting
+
+            li
+              a(href='#where-to-buy') Where to buy
+
+      article.col-sm-9.col-lg-8.col-xl-6
         h2  Professional Services
 
         p As Free & Open Source software, you can acquire Govstrap.io freely and implement as you see fit. However, you can choose to purchase professional services to implement Govstrap.io on to your content management system, to help migrate between platforms or to manage other parts of your project.
@@ -47,31 +70,4 @@ section.container-fluid
         p Alternatively Govstrap.io and associated services can be acquired directly from OpusVL - the Govstrap.io creators. Website:   
           a(href='http://opusvl.com/' rel='noopener norefferer') http://opusvl.com/ 
           span or by phone on 01788 298450.
-
-
-      aside.col-sm-4.col.md-4.col-lg-4
-
-        .side-bar.side-bar-right
-
-          h4.bg-primary Quick Links
-
-          ul.nav.nav-pills.nav-stacked
-            li
-              a(href='#scoping') Scoping
-            li
-              a(href='#staging') Staging
-            li
-              a(href='#testing') Testing
-            li
-              a(href='#project-management') Project management
-            li
-              a(href='#support-and-training') Support and training
-            li        
-              a(href='#hosting') Hosting
-
-            li
-              a(href='#where-to-buy') Where to buy
-
-
-
-include /includes/footer
+     

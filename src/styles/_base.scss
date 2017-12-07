@@ -1,88 +1,80 @@
 @import 'colors';
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-
-
 body {
-  color: $body-color;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
+    color: $body-color;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
 }
 
 h1 {
-  font-size: 48px;
+    font-size: 48px;
 }
 
 h2 {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 h3 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 h4 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 h5 {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 h6 {
-  font-size: 16px;
-  font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 p {
-  line-height: 1.5;
+    line-height: 1.5;
 }
 
 section {
-  margin-bottom: 10px;
-
-  .container {
-    border-top: 10px solid $secondary-link-color;
-  }
+    margin-bottom: 10px;
+    .container {
+        border-top: 10px solid $secondary-link-color;
+    }
 }
 
 a {
-  &:focus {
-    background-color: $link-color;
-    outline: 3px solid $link-color;
-  }
-
-  &:link {
-    color: $secondary-link-color;
-    text-decoration: underline;
-  }
-
-  &:hover {
-    color: $link-on-hover;
-  }
-
-  &:visited {
-    color: $link-on-visited;
-  }
-
-  > .btn {
-    color: $white;
-  }
+    &:focus {
+        background-color: $link-color;
+        outline: 3px solid $link-color;
+    }
+    &:link {
+        color: $secondary-link-color;
+        text-decoration: underline;
+    }
+    &:hover {
+        color: $link-on-hover;
+    }
+    &:visited {
+        color: $link-on-visited;
+    }
+    >.btn {
+        color: $white;
+    }
 }
 
 .btn {
-  background-color: $btn-color;
-  border: 3px solid $btn-color;
-  border-radius: 0;
-  -webkit-box-shadow: 0 2px 0 $box-shadow;
-  box-shadow: 0 2px 0 $box-shadow;
-  color: $white;
-  font-weight: 600;
-
-  &:hover {
-    background-color: $btn-bg;
-    border: 3px solid $btn-bg;
+    background-color: $btn-color;
+    border: 3px solid $btn-color;
+    border-radius: 0;
+    -webkit-box-shadow: 0 2px 0 $box-shadow;
+    box-shadow: 0 2px 0 $box-shadow;
     color: $white;
-  }
+    font-weight: 600;
+    &:hover {
+        background-color: $btn-bg;
+        border: 3px solid $btn-bg;
+        color: $white;
+    }
 }
 
 .btn.active,
@@ -94,11 +86,11 @@ a {
 .btn:active.focus,
 .btn:active:focus,
 .btn:focus {
-  background-color: $btn-bg;
-  border: 3px solid $link-color;
-  color: $white;
-  outline: none;
-  outline-offset: 0;
+    background-color: $btn-bg;
+    border: 3px solid $link-color;
+    color: $white;
+    outline: none;
+    outline-offset: 0;
 }
 
 .btn-default.active.focus,
@@ -107,284 +99,264 @@ a {
 .btn-default:active.focus,
 .btn-default:active:focus,
 .btn-default:active:hover,
-.open > .dropdown-toggle.btn-default.focus,
-.open > .dropdown-toggle.btn-default:focus,
-.open > .dropdown-toggle.btn-default:hover {
-  border: 0;
+.open>.dropdown-toggle.btn-default.focus,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover {
+    border: 0;
 }
 
 .quick-card {
-  border-top: 5px solid $secondary-link-color;
-  padding-top: 3px;
-  margin-bottom: 60px;
+    border-top: 5px solid $secondary-link-color;
+    padding-top: 3px;
+    margin-bottom: 60px;
 }
 
 .tweets {
-  ul {
-    list-style-type: none;
-
-    > li {
-      display: inline-block;
-      padding: 16px;
-      margin-bottom: 10px;
-      max-width: 468px;
-      background-color: $tweet-bg;
-
-      a {
-        font-weight: 600;
-      }
+    ul {
+        list-style-type: none;
+        >li {
+            display: inline-block;
+            padding: 16px;
+            margin-bottom: 10px;
+            max-width: 468px;
+            background-color: $tweet-bg;
+            a {
+                font-weight: 600;
+            }
+        }
     }
-  }
-
-  > .not-first {
-    display: none;
-  }
-
-  .recent-tweets {
-    border-right: 5px solid $body-color;
-    padding: 10px 10px 20px;
-    background-color: $secondary-link-color;
-    color: $white;
-
-    a {
-      color: $white;
+    >.not-first {
+        display: none;
     }
-}
-
-  .more {
-    padding-left: 40px;
-  }
+    .recent-tweets {
+        border-right: 5px solid $body-color;
+        padding: 10px 10px 20px;
+        background-color: $secondary-link-color;
+        color: $white;
+        a {
+            color: $white;
+        }
+    }
+    .more {
+        padding-left: 40px;
+    }
 }
 
 aside {
-  margin-top: 20px;
+    margin-top: 20px;
+    padding-top: 1rem;
+    // order: 1;
 }
 
 .dropdown-menu {
-  border-radius: 0;
-
-  > li > a {
-    color: $body-color;
-    font-weight: 600;
-    font-size: 16px;
-
-    &:hover {
-      text-decoration: underline;
-      background-color: transparent;
+    border-radius: 0;
+    >li>a {
+        color: $body-color;
+        font-weight: 600;
+        font-size: 16px;
+        &:hover {
+            text-decoration: underline;
+            background-color: transparent;
+        }
     }
-  }
 }
 
 .btn-group {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .btn-apply {
-  padding: 20px;
-  background-color: $btn-apply;
-  color: $white;
-  text-align: center;
-
-  a {
-    font-family: inherit;
-    font-weight: 700;
-    line-height: 1.1;
-    color: inherit;
-    font-size: 24px;
-    background-color: transparent;
-
-    &:active,
-    &:focus,
-    &:hover {
-      font-family: inherit;
-      font-weight: 700;
-      line-height: 1.1;
-      color: inherit;
-      font-size: 24px;
-      background-color: transparent;
+    padding: 20px;
+    background-color: $btn-apply;
+    color: $white;
+    text-align: center;
+    a {
+        font-family: inherit;
+        font-weight: 700;
+        line-height: 1.1;
+        color: inherit;
+        font-size: 24px;
+        background-color: transparent;
+        &:active,
+        &:focus,
+        &:hover {
+            font-family: inherit;
+            font-weight: 700;
+            line-height: 1.1;
+            color: inherit;
+            font-size: 24px;
+            background-color: transparent;
+        }
     }
-  }
 }
 
 .form {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .checkbox {
-  label {
-    cursor: pointer;
-
-    .block-label {
-      padding-left: 35px;
-    }
-
-    &:hover {
-      label {
+    label {
+        cursor: pointer;
         .block-label {
-          border: 1px solid $body-color;
+            padding-left: 35px;
         }
-      }
-    }
-
-    span {
-      line-height: 24px;
-
-      &::before {
-        margin-right: 4px;
-        padding-left: 2px;
-        padding-top: 2px;
-        width: 21px;
-        height: 21px;
-        border: 1px solid $code-color;
-        display: inline-block;
-        line-height: 15px;
-        content: '';
-        float: left;
-      }
-    }
-
-    input {
-      [type='checkbox'] {
-        display: none;
-
-        &:checked + span::before {
-          font-family: 'Glyphicons Halflings';
-          content: '\e013';
-          color: $body-color;
-          }
+        &:hover {
+            label {
+                .block-label {
+                    border: 1px solid $body-color;
+                }
+            }
         }
-      }
+        span {
+            line-height: 24px;
+            &::before {
+                margin-right: 4px;
+                padding-left: 2px;
+                padding-top: 2px;
+                width: 21px;
+                height: 21px;
+                border: 1px solid $code-color;
+                display: inline-block;
+                line-height: 15px;
+                content: '';
+                float: left;
+            }
+        }
+        input {
+            [type='checkbox'] {
+                display: none;
+                &:checked+span::before {
+                    font-family: 'Glyphicons Halflings';
+                    content: '\e013';
+                    color: $body-color;
+                }
+            }
+        }
     }
 }
 
 .form-control {
-  border-radius: 0 !important;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  height: 40px;
-  border: 1px solid $code-color;
-
-  &:focus {
-    border: 3px solid $link-color;
+    border-radius: 0 !important;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-  }
+    height: 40px;
+    border: 1px solid $code-color;
+    &:focus {
+        border: 3px solid $link-color;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 }
 
 .input-group-btn {
-  &:last-child {
-    &.btn {
-      height: 37px;
+    &:last-child {
+        &.btn {
+            height: 37px;
+        }
     }
-  }
 }
 
 .phase-tag-beta {
-  background-color: $phase-tag-beta;
-  color: $white;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.1428571429;
-  margin: 0 8px 0 0;
-  padding: 2px 5px 2px 0;
-  text-decoration: none;
-  text-transform: uppercase;
+    background-color: $phase-tag-beta;
+    color: $white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.1428571429;
+    margin: 0 8px 0 0;
+    padding: 2px 5px 2px 0;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .phase-tag-alpha {
-  background-color: $phase-tag-alpha;
-  color: $white;
-  display: inline-block;
-  font-family: 'nta', Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.1428571429;
-  margin: 0 8px 0 0;
-  padding: 2px 5px 2px 0;
-  text-decoration: none;
-  text-transform: uppercase;
+    background-color: $phase-tag-alpha;
+    color: $white;
+    display: inline-block;
+    font-family: 'nta', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.1428571429;
+    margin: 0 8px 0 0;
+    padding: 2px 5px 2px 0;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 code {
-  background-color: $code-bg;
-  color: $code-color;
+    background-color: $code-bg;
+    color: $code-color;
 }
 
 pre {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 input {
-  outline: none !important;
+    outline: none !important;
 }
 
 .well {
-  background-color: $well;
-  border: 1px solid $date-color;
-  border-radius: 0;
+    background-color: $well;
+    border: 1px solid $date-color;
+    border-radius: 0;
 }
 
 .block-label {
-  background-color: $bg-color;
-  border: 1px solid $bg-color;
-  line-height: 29px;
-  padding: 10px 30px 12px 35px;
-  vertical-align: middle;
-
-  .checked {
-    background-color: $white;
-    border: 1px solid $body-color;
-  }
-
-  &:hover {
-    border: 1px solid $body-color;
-  }
-
-  input {
-    [type=radio] {
-      height: 29px;
-      margin-right: 10px;
-      position: relative;
-      vertical-align: bottom;
-      width: 29px;
-  }
-
-    [type=checkbox] {
-      height: 29px;
-      margin-right: 10px;
-      position: relative;
-      vertical-align: bottom;
-      width: 29px;
-
-      &:checked+label {
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    line-height: 29px;
+    padding: 10px 30px 12px 35px;
+    vertical-align: middle;
+    .checked {
         background-color: $white;
-      }
+        border: 1px solid $body-color;
     }
-  }
+    &:hover {
+        border: 1px solid $body-color;
+    }
+    input {
+        [type=radio] {
+            height: 29px;
+            margin-right: 10px;
+            position: relative;
+            vertical-align: bottom;
+            width: 29px;
+        }
+        [type=checkbox] {
+            height: 29px;
+            margin-right: 10px;
+            position: relative;
+            vertical-align: bottom;
+            width: 29px;
+            &:checked+label {
+                background-color: $white;
+            }
+        }
+    }
 }
 
 .js-hidden {
-  display: none;
+    display: none;
 }
 
 .panel-left {
-  border-left: 5px solid $light-gray-blue;
-  padding-left: 20px;
+    border-left: 5px solid $light-gray-blue;
+    padding-left: 20px;
 }
 
 .btn-start,
 .btn-start:active,
 .btn-start:focus {
-  background-image: url('../img/icon-pointer.png');
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
-  font-weight: 700;
-  padding-right: 3.157895em;
-  text-transform: none;
+    background-image: url('./images/icon-pointer.png');
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    padding-right: 3.157895em;
+    text-transform: none;
 }

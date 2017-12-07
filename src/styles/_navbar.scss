@@ -1,144 +1,33 @@
 @import 'colors';
-
+header {
+    background-color: $body-color;
+}
 
 .navbar {
-  background-color: $black;
-  border-radius: 0;
-  margin-bottom: 0;
-  text-align: center;
-
-
-
-  > .navbar-wrapper {
-    // margin: 0;
-    // padding-left: 30px;
-		// .navbar-header {
-		// 	padding-left: 15px;
-		// }
-	}
-
-  li {
-    > a {
-      color: $white !important;
-      font-size: 1.1em;
-      font-weight: 400;
-      // line-height: 2em;
-      text-decoration: none;
-      text-transform: capitalize;
-
-      &:hover {
-        background-color: transparent;
+    a {
         color: $white;
-        text-decoration: underline;
-      }
+        font-size: 28px;
+        font-weight: 500;
+        &:active {
+            color: $white;
+        }
+        &:visited {
+            color: $white;
+        }
+        &:focus {
+            color: $white;
+            background-color: transparent;
+            outline: 3px solid $link-color;
+        }
     }
-  }
-
-  .navbar-brand {
-    color: $white;
-    font-size: 30px;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-right: 2em;
-
-    &:hover {
-      background-color: transparent;
-      color: $white;
-      text-decoration: underline;
+    .navbar-toggler {
+        color: $white;
+        border-radius: 0;
+        border: 1px solid $body-color;
+        &:active,
+        &:focus {
+            border-color: $body-color;
+            outline: 0;
+        }
     }
-
-    a {
-      color: $white;
-      font-weight: 700;
-      text-decoration: none;
-      text-transform: capitalize;
-
-      }
-  }
-
-  .active {
-    a {
-      color: $link-active;
-    }
-  }
-
-  // .navbar-header {
-  //   width: 100%;
-  //   text-align: center;
-  // }
-}
-
-.navbar-default {
-  border: 0;
-  border-color: transparent;
-
-  .navbar-toggle {
-    border-color: $black;
-
-    &:hover,
-    &:active,
-    &:visited,
-    &:focus {
-      background-color: transparent;
-    }
-  }
-}
-
-// .navbar-nav {
-//   display: inline-block;
-//   float: right;
-//
-//   >li {
-//     display: inline-block;
-//     float: left;
-//   }
-// }
-
-.header-bar {
-  border-bottom: 10px solid $secondary-link-color;
-  height: 10px;
-  margin-bottom: 30px;
-}
-
-.nav {
-
-  >li {
-    >a {
-      &:focus {
-        background-color: transparent;
-      }
-    }
-  }
-}
-
-.login-form {
-  background-color: $code-bg;
-  margin: 20px auto;
-  max-width: 500px;
-  padding: 15px 30px;
-
-}
-
-.navbar-collapse.in {
-
-  float: none;
-  width: 100%;
-  // text-align: center;
-
-  .navbar-nav {
-    display: block;
-    // width: 100%;
-    float: none;
-
-    li {
-      float: none;
-      display: block;
-      width: 100%;
-
-      // a {
-      //   width: 100%;
-      // }
-    }
-  }
 }

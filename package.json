@@ -20,13 +20,13 @@
   },
   "homepage": "https://github.com/JohnMica/govstrap.io#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1"
+    "popper.js": "^1.12.9"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
     "babel-preset-latest": "^6.16.0",
+    "bootstrap": "^4.0.0-beta.2",
     "browser-sync": "^2.18.5",
     "del": "^2.2.2",
     "eslint": "^3.12.0",
@@ -47,6 +47,7 @@
     "gulp-sass": "^3.0.0",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
+    "jquery": "^3.2.1",
     "minimatch": "^3.0.4",
     "minimist": "^1.2.0",
     "run-sequence": "^1.2.2"

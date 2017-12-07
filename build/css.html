@@ -1,111 +1,187 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="favicon.ico">
-  <title>Govstrap.io - Bootstrapped GDS theme for GOV.UK related websites</title>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
-  <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
-  <!-- Finally, govstrap styling-->
-  <link href="styles/govstrap.css" rel="stylesheet">
-  <!-- Finally, prism stylesheet for coloring the example markup-->
-  <link href="styles/prism.css" rel="stylesheet">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
-  <!-- [if IE 9] -->
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <!-- <![endif]-->
+
+<head><!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Govstrap.io - Bootstrapped GDS theme for GOV.UK related websites</title>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
+    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Finally, govstrap styling-->
+    <link href="styles/govstrap.css" rel="stylesheet">
+    <!-- Finally, prism stylesheet for coloring the example markup-->
+    <link href="styles/prism.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- [if IE 9] 
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
+    <!-- <![endif]-->
+  </head>
 </head>
-<section class="container">
-  <div class="row">
-    <div class="col-sm-8">
-      <h1>CSS</h1>
-      <p>Govstrap is basically Bootstrap with small enhancements to make it look GOV.UK themed. Below we'll go through some CSS that helps us with that.</p><a name="hero-banner"></a>
-      <h3>Hero Banner</h3>
-      <p>Hero banners work best just under the main navigation, where you can put the first bit of information a user will see. Generally you'll only have one hero banner per site, but that doesn't mean you're limited to it.</p>
-      <p>You'll want to add the <code>hero-banner</code> class to your surrounding <code>container-fluid</code> so it spans the entire screen, just like our landing page.</p>
-      <div class="phase-tag-alpha">Example</div>
-      <pre class="language-markup">&lt;code class="language-markup"&gt;
-  &lt;section class=&quot;container-fluid hero-banner&quot;&gt;
-    &lt;div class=&quot;content&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-sm-12&quot;&gt;
-          &lt;h1&gt;Welcome to Example site!&lt;/h1&gt;
-          &lt;p&gt;Add some text here to grab your audiences attention. It is a
-          HERO banner afterall!&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;           
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/code&gt;</pre><a name="promo-banner"></a>
-      <h3>Promo Banner <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
-      <p>Promo banners are bright yellow, and will really draw the attention of people browsing your website. They should span the entire screen, just like hero banners.</p>
-      <div class="phase-tag-alpha">Example</div>
-      <pre class="language-markup">&lt;code class="language-markup"&gt;
-  &lt;section class="container-fluid promo-banner"&gt;
-    &lt;div class="content"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-sm-12"&gt;
-          &lt;strong&gt;Use the strong tag for the top text. This should be related 
-          and lead up to the text below it&lt;/strong&gt;
-          &lt;p&gt;This totally got my attention&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/code&gt;</pre><a name="general-banners"></a>
-      <h3>General Banners <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
-      <p>Normal banners (<code>.banner</code>) are light blue and can be used anywhere. Like other banners, they should use the full length of the page</p>
-      <div class="phase-tag-alpha">Example</div>
-      <pre class="language-markup">&lt;code class="language-markup"&gt;
-  &lt;section class="container-fluid banner"&gt;
-    &lt;div class="content"&gt;
-      &lt;div class="row"&gt;
-        &lt;div class="col-sm-12"&gt;
-          &lt;strong&gt;Strong tags work the same as the promo banners&lt;/strong&gt;
-          &lt;p&gt;Some nice text here. Whatever you want really.&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/code&gt;
-</pre><a name="button-apply"></a>
-      <h3>Apply Button <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
-      <p>Sometimes you'll want a big button for important processes, like applying for something. The <code>.btn-apply</code> is useful here.</p>
-      <div class="row">
-        <div class="col-sm-6">
-          <p>Keep in mind that <code>btn-apply</code> is a block, so it'll take up an entire column. I've used 2 <code>col-sm-6</code>'s here to demonstrate</p>
+<body>
+  <header class="container-fluid">
+    <div class="row pl-1 mr-auto ml-auto">
+      <nav class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 navbar navbar-dark navbar-expand-md" id="navbar" role="navigation"><a class="navbar-brand" href="/">GOVSTRAP.io</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <!-- Collect the nav links, forms, and other content for toggling-->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="https://code4health.org/" target="_blank" rel="noopener ">Code 4 Health<span class="sr-only">current</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://google.com/" target="_blank" rel="noopener ">Google</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://getbootstrap.org/" target="_blank" rel="noopener ">Bootstrap    </a></li>
+            <li class="nav-item"><a class="nav-link" href="https://jquery.org/" target="_blank" rel="noopener ">jQuery</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://webpack.org/" target="_blank" rel="noopener ">Webpack</a></li>
+          </ul>
         </div>
-        <div class="col-sm-6">
-          <div class="btn-apply"><a href="#button-apply">Apply for foo now!</a></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="phase-tag-alpha">Example</div>
-          <pre class="language-markup">&lt;code class="language-markup"&gt;     
-  &lt;div class="btn-apply"&gt;
-    &lt;a href="#"&gt;Apply for foo now!&lt;/a&gt;
-  &lt;/code&gt;
-&lt;/div&gt;
-</pre>
-        </div>
-      </div>
+      </nav>
     </div>
-    <aside class="col-sm-4">
-      <div class="side-bar side-bar-right">
-        <h4 class="bg-primary">Quick Links</h4>
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#hero-banner">Hero Banners</a></li>
-          <li><a href="#promo-banner">Promo Banners</a></li>
-          <li><a href="#general-banners">General Banners</a></li>
-          <li><a href="#button-apply">Apply button</a></li>
-        </ul>
+  </header>
+  <main>
+    <section class="container-fluid">
+      <div class="row">
+        <aside class="col-sm-3 col-lg-2 col-xl-2 offset-lg-1 offset-xl-2">
+          <div class="side-bar side-bar-left">
+            <h4 class="bg-primary">Quick Links</h4>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#hero-banner">Hero Banners</a></li>
+              <li><a href="#promo-banner">Promo Banners</a></li>
+              <li><a href="#general-banners">General Banners</a></li>
+              <li><a href="#button-apply">Apply button</a></li>
+            </ul>
+          </div>
+        </aside>
+        <article class="col-sm-9 col-lg-8 col-xl-6">
+          <h1>CSS</h1>
+          <p>Govstrap is basically Bootstrap with small enhancements to make it look GOV.UK themed. Below we'll go through some CSS that helps us with that.</p><a name="hero-banner"></a>
+          <h3>Hero Banner</h3>
+          <p>Hero banners work best just under the main navigation, where you can put the first bit of information a user will see. Generally you'll only have one hero banner per site, but that doesn't mean you're limited to it.</p>
+          <p>You'll want to add the <code>hero-banner</code> class to your surrounding <code>container-fluid</code> so it spans the entire screen, just like our landing page.</p>
+          <div class="phase-tag-alpha">Example</div>
+          <pre class="language-markup"><code class="language-markup">&lt;section class=&quot;container-fluid hero-banner&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-12&quot;&gt;
+        &lt;h1&gt;Welcome to Example site!&lt;/h1&gt;
+        &lt;p&gt;Add some text here to grab your audiences attention. It is a
+        HERO banner afterall!&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;           
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre><a name="promo-banner"></a>
+          <h3>Promo Banner <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+          <p>Promo banners are bright yellow, and will really draw the attention of people browsing your website. They should span the entire screen, just like hero banners.</p>
+          <div class="phase-tag-alpha">Example</div>
+          <pre class="language-markup"><code class="language-markup">&lt;section class="container-fluid promo-banner"&gt;
+  &lt;div class="content"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-12"&gt;
+        &lt;strong&gt;Use the strong tag for the top text. This should be related 
+        and lead up to the text below it&lt;/strong&gt;
+        &lt;p&gt;This totally got my attention&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre><a name="general-banners"></a>
+          <h3>General Banners <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+          <p>Normal banners (<code>.banner</code>) are light blue and can be used anywhere. Like other banners, they should use the full length of the page</p>
+          <div class="phase-tag-alpha">Example</div>
+          <pre class="language-markup"><code class="language-markup">&lt;section class="container-fluid banner"&gt;
+  &lt;div class="content"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-12"&gt;
+        &lt;strong&gt;Strong tags work the same as the promo banners&lt;/strong&gt;
+        &lt;p&gt;Some nice text here. Whatever you want really.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+</code></pre><a name="button-apply"></a>
+          <h3>Apply Button <span class="pull-right"><a class="scroll-top" href="javascript:;">Top</a></span></h3>
+          <p>Sometimes you'll want a big button for important processes, like applying for something. The <code>.btn-apply</code> is useful here.</p>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Keep in mind that <code>btn-apply</code> is a block, so it'll take up an entire column. I've used 2 <code>col-sm-6</code>'s here to demonstrate</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="btn-apply"><a href="#button-apply">Apply for foo now!</a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="phase-tag-alpha">Example</div>
+              <pre class="language-markup"><code class="language-markup">&lt;div class="btn-apply"&gt;
+  &lt;a href="#"&gt;Apply for foo now!&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </article>
       </div>
-    </aside>
-  </div>
-</section>
+    </section>
+  </main>
+  <footer>
+    <section class="container-fluid footer">
+      <div class="row ml-auto mr-auto pl-1">
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 pt3"></div>
+        <hr>
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 pt-3">
+          <div class="row"> 
+            <div class="col-2"><a href="http://opusvl.com/" target="_blank" rel="noreferrer noopener"><img src="images/OpusVL-square-logo-40-NoBG.png"></a></div>
+            <div class="col-10">govstrap.io is an <a href="http://opusvl.com/" target="_blank" rel="noreferrer noopener">OpusVL</a> initiative.</div>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 pt-3">
+          <div class="row">
+            <div class="col-2"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noreferrer noopener"><img src="images/ogl.png"></a></div>
+            <div class="col-10">
+              <p>All content is available under the<span><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noreferrer noopener">Open Government Licence v3.0</a></span><span>, except where otherwise stated</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p> <span>Govstrap.io is not affiliated or endorsed by GDS, the UK Government or any official channels. It is a community project to help propagate the good work of GDS.</span></p>
+              <p><span>Discover #Govstrap on</span><span> <a href="https://twitter.com/search?q=%23govstrap" rel="noopener norefferer" target="_blank">Twitter.</a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="vendors/bundle.js"></script>
+  <script type="text/javascript" src="scripts/prism.js"></script>
+  <script src="scripts/govstrap.js"></script>
+  <!-- [if IE 9]-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+  <!-- <![endif]-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
+  <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+  <!-- Piwik-->
+  <script>
+    var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.govstrap.io"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+    var u="//web-analytics.opusvl.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 14]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+    
+  </script>
+  <noscript>
+    <p>  </p><img src="//web-analytics.opusvl.com/piwik.php?idsite=14" style="border:0;" alt="">
+    <!-- End Piwik Code-->
+    <!-- Piwik Image Tracker-->
+    <p></p><img src="http://web-analytics.opusvl.com/piwik.php?idsite=14&amp;rec=1" style="border:0;" alt="">
+    <!-- End Piwik-->
+  </noscript>
+</body>
