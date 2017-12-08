@@ -1,36 +1,33 @@
-
-<head><!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-    <title>Govstrap.io - Bootstrapped GDS theme for GOV.UK related websites</title>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
-    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Finally, govstrap styling-->
-    <link href="styles/govstrap.css" rel="stylesheet">
-    <!-- Finally, prism stylesheet for coloring the example markup-->
-    <link href="styles/prism.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
-    <!-- [if IE 9] 
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js')
-    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
-    -->
-    <!-- <![endif]-->
-  </head>
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>Govstrap.io - Bootstrapped GDS theme for GOV.UK related websites</title>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
+  <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Finally, govstrap styling-->
+  <link href="styles/govstrap.css" rel="stylesheet">
+  <!-- Finally, prism stylesheet for coloring the example markup-->
+  <link href="styles/prism.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+  <!-- [if IE 9] 
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js')
+  script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  -->
+  <!-- <![endif]-->
 </head>
-<body>
+<body class="d-flex flex-column">
   <header class="container-fluid">
     <div class="row pl-1 mr-auto ml-auto">
-      <nav class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 navbar navbar-dark navbar-expand-md" id="navbar" role="navigation"><a class="navbar-brand" href="/">GOVSTRAP.io</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <!-- Collect the nav links, forms, and other content for toggling-->
+      <nav class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 navbar navbar-expand-md navbar-dark" id="navbar"><a class="navbar-brand" href="/">GOVSTRAP.io</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="https://code4health.org/" target="_blank" rel="noopener ">Code 4 Health<span class="sr-only">current</span></a></li>
             <li class="nav-item"><a class="nav-link" href="https://google.com/" target="_blank" rel="noopener ">Google</a></li>
             <li class="nav-item"><a class="nav-link" href="https://getbootstrap.org/" target="_blank" rel="noopener ">Bootstrap    </a></li>
@@ -42,29 +39,26 @@
     </div>
   </header>
   <main>
-    <section class="container-fluid quickstart">
+    <section class="container quickstart">
       <div class="row">
-        <aside class="col-sm-3 col-lg-2 col-xl-2 offset-lg-1 offset-xl-2">
-          <div class="side-bar side-bar-left"></div>
-        </aside>
-        <article class="col-sm-9 col-lg-8 col-xl-6">
-          <h1>Govstrap.io quickstart guide</h1>
-          <h4>1. Get Bootstrap</h4>
-          <p>If you're already using Bootstrap to build your site then you're all set to style it with Govstrap.</p>
-          <p>If you don't have Bootstrap yet, download it from <a href="https://getbootstrap.com/">getbootstrap.com.</a><span> Govstrap is built for Bootstrap version 4.0.0-beta2.</span></p>
-          <h4>2. Add Govstrap</h4>
-          <p>Download the Govstrap CSS file from <a href="https://github.com/OpusVL/govstrap.io/blob/master/govstrap.io/assets/css/govstrap.css"> GitHub.</a></p>
-          <p>Load it after Bootstrap's CSS, like this:</p><br>
+        <article class="col-sm-12 col-md-10 col-lg-8 col-xl-8 offset-md-1 offset-lg-2 offset-xl-2">
+          <h1>Govstrap.io quickstart guide</h1><br>
+          <h3>Case Scenario 1</h3><br>
+          <h4>1. Add Govstrap</h4>
+          <p>We have based our styling on the latest version of <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap 4 </a><span>. Because we expect this beta version to suffer only minor modification until the final release, we have included it in our styling.</span></p>
+          <p>If you do feel adventurous enough you can fork the project </p>
+          <p>Download the Govstrap CSS file from <a href="http://cdn.govstrap.io/v2/css/govstrap.min.css"> our CDN.</a></p>
+          <p>Load it in your HTML head section like this:</p><br>
           <div class="phase-tag-alpha"> <span>Example</span></div><br><br>
-          <pre class="language-markup"><code class="language-markup">&lt;!-- Bootstrap core CSS --&gt;
-&lt;link href="bootstrap.min.css" rel="stylesheet"&gt;
-
-&lt;!-- Govstrap styling --&gt;
-&lt;link href="govstrap.css" rel="stylesheet"&gt;
-
-</code></pre>
-          <h4>3. You're done!</h4>
-          <p>You can now use all of the Govstrap classes and elements in your site.</p>
+          <pre class="language-markup"><code class="language-markup">&lt;!-- Govstrap styling --&gt;
+&lt;link href="govstrap.css" rel="stylesheet"&gt;</code></pre><br>
+          <h4>2. You're done!</h4>
+          <p>You can now use all of the Govstrap classes and elements in your site.</p><br>
+          <h3>Case Scenario 2</h3><br>
+          <h4>Fork our project on <a href="https://github.com/OpusVL/govstrap.io/tree/bootstrap4" rel="noopener" target="_blank">Githhub</a><span>.</span></h4>
+          <p>Run the commands in the Readme.md file to install the neccesarry local development dependencies</p>
+          <p>Make your own custom modifications to the pages, html, site strucutre, etc...</p>
+          <p>deploy the build folder and your done</p>
         </article>
       </div>
     </section>
@@ -76,21 +70,21 @@
         <hr>
         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 pt-3">
           <div class="row"> 
-            <div class="col-2"><a href="http://opusvl.com/" target="_blank" rel="noreferrer noopener"><img src="images/OpusVL-square-logo-40-NoBG.png"></a></div>
-            <div class="col-10">govstrap.io is an <a href="http://opusvl.com/" target="_blank" rel="noreferrer noopener">OpusVL</a> initiative.</div>
+            <div class="col-2"><a href="http://opusvl.com/" target="_blank" rel="noreferrer noopener"><img src="images/OpusVL-square-logo-40-NoBG.png" alt="OpusVL Logo"></a></div>
+            <div class="col-10">govstrap.io is an <a href="http://opusvl.com/" target="_blank" rel=" noopener">OpusVL</a> initiative.</div>
           </div>
         </div>
         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 pt-3">
           <div class="row">
-            <div class="col-2"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noreferrer noopener"><img src="images/ogl.png"></a></div>
+            <div class="col-2"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel=" noopener"><img src="images/ogl.png" alt="Open Government Licence Image"></a></div>
             <div class="col-10">
-              <p>All content is available under the<span><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noreferrer noopener">Open Government Licence v3.0</a></span><span>, except where otherwise stated</span></p>
+              <p>All content is available under the<span> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel=" noopener">Open Government Licence v3.0</a></span><span>, except where otherwise stated</span></p>
             </div>
           </div>
           <div class="row">
             <div class="col-12">
               <p> <span>Govstrap.io is not affiliated or endorsed by GDS, the UK Government or any official channels. It is a community project to help propagate the good work of GDS.</span></p>
-              <p><span>Discover #Govstrap on</span><span> <a href="https://twitter.com/search?q=%23govstrap" rel="noopener norefferer" target="_blank">Twitter.</a></span></p>
+              <p><span>Discover #Govstrap on</span><span> <a href="https://twitter.com/search?q=%23govstrap" rel="noopener " target="_blank">Twitter.</a></span></p>
             </div>
           </div>
         </div>
