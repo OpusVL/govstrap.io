@@ -1,6 +1,6 @@
 @import 'colors';
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-body {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i');
+ body {
     color: $body-color;
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
@@ -8,9 +8,11 @@ body {
 }
 
 main {
-    padding-top: 3rem;
-    border-top: 10px solid $secondary-link-color;
-    flex: 1 0 auto;
+    section.container:first-child {
+        padding-top: 3rem;
+        border-top: 10px solid $secondary-link-color;
+        flex: 1 0 auto;
+    }
 }
 
 h1 {

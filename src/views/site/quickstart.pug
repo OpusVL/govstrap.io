@@ -6,24 +6,27 @@ block content
       //- aside.col-sm-3.col-lg-2.col-xl-2.offset-lg-1.offset-xl-2
       //-   .side-bar.side-bar-left
 
-      article.col-sm-12.col-md-10.col-lg-8.col-xl-8.offset-md-1.offset-lg-2.offset-xl-3
+      article.col-sm-12.col-md-10.col-lg-8.col-xl-8.offset-md-1.offset-lg-2.offset-xl-2
         h1 Govstrap.io quickstart guide
 
-        h4 1. Get Bootstrap
+        //- h4 1. Get Bootstrap
 
-        p If you're already using Bootstrap to build your site then you're all set to style it with Govstrap.
+        //- p If you're already using Bootstrap to build your site then you're all set to style it with Govstrap.
 
-        p If you don't have Bootstrap yet, download it from 
-          a(href='https://getbootstrap.com/') getbootstrap.com.
-          span  Govstrap is built for Bootstrap version 4.0.0-beta2.
-
-        h4 2. Add Govstrap
-
+        //- p If you don't have Bootstrap yet, download it from 
+        //-   a(href='https://getbootstrap.com/') getbootstrap.com.
+        //-   span  Govstrap is built for Bootstrap version 4.0.0-beta2.
+        br
+        h3 Case Scenario 1
+        br
+        h4 1. Add Govstrap
+        p We have based our styling on the latest version of 
+          a(href="https://getbootstrap.com/" target="_blank" rel="noopener") Bootstrap 4 
+          span . Because we expect this beta version to suffer only minor modification until the final release, we have included it in our styling.
+        p If you do feel adventurous enough you can fork the project 
         p Download the Govstrap CSS file from 
-          a(href='https://github.com/OpusVL/govstrap.io/blob/master/govstrap.io/assets/css/govstrap.css')  GitHub.
-
-        p Load it after Bootstrap's CSS, like this:
-
+          a(href='http://cdn.govstrap.io/v2/css/govstrap.min.css')  our CDN.
+        p Load it in your HTML head section like this:
         br
         .phase-tag-alpha 
           span Example
@@ -31,13 +34,17 @@ block content
         br
         pre.language-markup
           code.language-markup.
-            &lt;!-- Bootstrap core CSS --&gt;
-            &lt;link href="bootstrap.min.css" rel="stylesheet"&gt;
-
             &lt;!-- Govstrap styling --&gt;
             &lt;link href="govstrap.css" rel="stylesheet"&gt;
-       
-
-        h4 3. You're done!
+        br
+        h4 2. You're done!
         p You can now use all of the Govstrap classes and elements in your site.
-    
+        br
+        h3 Case Scenario 2
+        br
+        h4 Fork our project on 
+          a(href="https://github.com/OpusVL/govstrap.io/tree/bootstrap4" rel="noopener" target="_blank") Githhub
+          span .
+        p Run the commands in the Readme.md file to install the neccesarry local development dependencies
+        p Make your own custom modifications to the pages, html, site strucutre, etc...
+        p deploy the build folder and your done
