@@ -4,6 +4,13 @@ body {
     color: $body-color;
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
+    min-height: 100vh;
+}
+
+main {
+    padding-top: 3rem;
+    border-top: 10px solid $secondary-link-color;
+    flex: 1 0 auto;
 }
 
 h1 {
@@ -144,8 +151,7 @@ a {
 
 aside {
     margin-top: 20px;
-    padding-top: 1rem;
-    // order: 1;
+    padding-top: 1rem; // order: 1;
 }
 
 .dropdown-menu {

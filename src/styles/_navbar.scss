@@ -1,4 +1,4 @@
-@import 'colors';
+    @import 'colors';
 header {
     background-color: $body-color;
 }
@@ -29,5 +29,17 @@ header {
             border-color: $body-color;
             outline: 0;
         }
+    }
+    .nav-item {
+        .nav-link {
+            color: $white;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .navbar-collapse.collapsing {
+        display: block;
+        width: 100%;
+        margin-top: 0;
     }
 }

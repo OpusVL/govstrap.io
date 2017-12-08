@@ -1,12 +1,11 @@
 .row.pl-1.mr-auto.ml-auto
-  nav.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.navbar.navbar-dark.navbar-expand-md#navbar(role='navigation')
+  nav.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.navbar.navbar-expand-md.navbar-dark#navbar
     a.navbar-brand(href='/') GOVSTRAP.io
-    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#mainNav', aria-expanded='false', aria-controls='mainNav' aria-label="Toggle navigation")
+    button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#mainNav', aria-controls='mainNav', aria-expanded='false', aria-label='Toggle navigation')
       span.navbar-toggler-icon
 
-    // Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse#mainNav
-      ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+      ul.navbar-nav.mr-auto
         li.nav-item
           a.nav-link(href='https://code4health.org/' target='_blank' rel='noopener ')
             | Code 4 Health

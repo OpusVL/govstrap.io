@@ -11807,6 +11807,15 @@ body {
   color: #0b0c0c;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 3rem;
+  border-top: 10px solid #005ea5;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 h1 {
@@ -12201,10 +12210,23 @@ header {
   outline: 0;
 }
 
+.navbar .nav-item .nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navbar .navbar-collapse.collapsing {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+}
+
 .hero-banner {
   background-color: #005ea5;
   color: #fff;
   margin-bottom: 10px;
+  margin-top: -4rem;
 }
 
 .hero-banner .row {
@@ -12398,6 +12420,7 @@ aside .inverse {
   background-color: #dee0e2;
   min-height: 300px;
   margin-top: 30px;
+  margin-bottom: 0;
   padding-top: 20px;
   padding-bottom: 30px;
 }
