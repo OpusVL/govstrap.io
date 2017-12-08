@@ -11805,7 +11805,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 body {
   color: #0b0c0c;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   min-height: 100vh;
 }
@@ -11849,10 +11849,6 @@ p {
 
 section {
   margin-bottom: 10px;
-}
-
-section .container {
-  border-top: 10px solid #005ea5;
 }
 
 a:focus {
@@ -12226,7 +12222,6 @@ header {
   background-color: #005ea5;
   color: #fff;
   margin-bottom: 10px;
-  margin-top: -4rem;
 }
 
 .hero-banner .row {
