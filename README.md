@@ -65,7 +65,7 @@ Initialize `npm` on `<my-project-name>` directory
 $ cd <my-project-name>
 $ npm install
 ```
-
+<!-- 
 Install `Gulp` locally
 
 ```bash
@@ -78,11 +78,11 @@ Install `Bower` local dependencies used for the site
 $ sudo bower install jquery bootstrap font-awesome --save-dev
 ```
 
-Finally, install `Gulp` required dependencies and developer dependencies
+Finally, install `Gulp` required dependencies and developer dependencies -->
 
-```bash
+<!-- ```bash
 $ npm i -D autoprefixer  gulp-babel browser-sync gulp-changed del gulp-eslint gulp-include gulp-imagemin gulp-pug minimist gulp-cssnano gulp-postcss gulp-rename gulp-sass run-sequence gulp-uglify gulp-plumber gulp-util graceful-fs minimatch
-```
+``` -->
 
 
 ### Running Your Local Server With Gulp
