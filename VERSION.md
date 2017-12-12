@@ -1,3 +1,13 @@
+## 2.0.0
+
+- Updated the Bootstrap versin to version 4 - beta2
+- refactored the Pug templates 
+  - using the new strucutre
+  - now it is using the default layout.pug file and each page is a `block content`
+  - inlcuded the default JS files in the Bundle.js
+- using display flex on the whole body to ensure the footer is always at the bottom of the page even if the page has no real content
+- updated the style to be more compliant with the [Gov.uk](https:gov.uk) design paterns
+
 ## 1.0.1
 
 ### Pug templates
