@@ -3,7 +3,7 @@
  * -----------------------------------------------------------------------------
  */
 
-/* npm i -D autoprefixer  gulp-babel browser-sync gulp-changed del gulp-eslint gulp gulp-include gulp-imagemin gulp-pug minimist gulp-cssnano gulp-postcss gulp-rename gulp-sass run-sequence gulp-uglify gulp-plumber gulp-util graceful-fs minimatch */
+/* npm i -D autoprefixer  gulp-babel browser-sync gulp-changed del gulp-eslint gulp gulp-include gulp-imagemin gulp-pug minimist gulp-cssnano gulp-postcss gulp-rename gulp-sass run-sequence gulp-replace gulp-uglify gulp-plumber gulp-util graceful-fs minimatch */
 
 
 const autoprefixer = require('autoprefixer');
@@ -110,7 +110,7 @@ gulp.task('server', () => {
  */
 
 gulp.task('build', (callback) => sequence(
-  ['clean'], ['assets'], ['scripts'], ['styles'], ['prismCSS'], ['prismJS'], ['ie10CSS'], ['ie10JS'], ['vendors'], ['views'],
+  ['clean'], ['vendors'], ['assets'], ['scripts'], ['styles'], ['prismCSS'], ['prismJS'], ['ie10CSS'], ['ie10JS'], ['views'],
   callback
 ));
 
@@ -157,6 +157,7 @@ gulp.task('fonts', () => gulp
   .pipe(changed(`${path.build}/fonts`))
   // Save files
   .pipe(gulp.dest(`${path.build}/fonts`))
+
 );
 
 /**
@@ -322,22 +323,23 @@ gulp.task('views', () => gulp
  * -----------------------------------------------------------------------------
  */
 
-gulp.task('ie10CSS', function() { 
-  return gulp.src(`${path.src}/styles/ie10-viewport-bug-workaround.css`) 
-    .pipe(gulp.dest('build/styles')); 
-});
+gulp.task('ie10CSS', () => gulp
+  // select file
+  .src(`${path.src}/styles/ie10-viewport-bug-workaround.css`) 
+  .pipe(gulp.dest(`${path.build}/styles`))
+);
 
-gulp.task('ie10JS', function() { 
-  return gulp.src(`${path.src}/scripts/ie10-viewport-bug-workaround.js`) 
-    .pipe(gulp.dest('build/scripts')); 
-});
+gulp.task('ie10JS', () => gulp
+  .src(`${path.src}/scripts/ie10-viewport-bug-workaround.js`) 
+  .pipe(gulp.dest(`${path.build}/scripts`))
+);
 
-gulp.task('prismCSS', function() { 
-  return gulp.src(`${path.src}/styles/prism.css`) 
-    .pipe(gulp.dest('build/styles')); 
-});
+gulp.task('prismCSS', () => gulp
+  .src(`${path.src}/styles/prism.css`) 
+  .pipe(gulp.dest(`${path.build}/styles`))
+);
 
-gulp.task('prismJS', function() { 
-  return gulp.src(`${path.src}/scripts/prism.js`) 
-    .pipe(gulp.dest('build/scripts')); 
-});
+gulp.task('prismJS', () => gulp
+  .src(`${path.src}/scripts/prism.js`) 
+  .pipe(gulp.dest(`${path.build}/scripts`))
+);

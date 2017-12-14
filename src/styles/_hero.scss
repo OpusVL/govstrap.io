@@ -1,71 +1,95 @@
-
-
-
 .hero-banner {
-	background-color: $secondary-link-color;
-	color: $white;
-	margin-bottom: 10px;
-
-	.upcoming-events {
-		background-color: $body-color;
-		padding: 15px 15px 30px;
-		margin-top: 30px;
-
-		ul {
-			list-style-type: none;
-			padding-left: 0;
-
-			.date {
-				color: $date-color;
-				margin-bottom: 5px;
-				font-size: 12px;
-				font-style: italic;
-			}
-
-			li > a {
-				font-weight: 700;
-				color: $white;
-				}
-		}
-	}
-
-	.btn {
-		background-color: $body-color;
-		border: 1px solid $body-color;
-		color: $white;
-
-		&:focus {
-			background-color: $body-color;
-			color: $white;
-		}
-	}
-
-	.form {
-		margin-top: 20px;
-	}
+    background-color: $secondary-link-color;
+    color: $white;
+    margin-bottom: 10px;
+    // margin-top: -4rem;
+    .row {
+        margin-bottom: 0;
+    }
+    .upcoming-events {
+        background-color: $body-color;
+        margin-top: 30px;
+        padding: 15px 15px 30px;
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            .date {
+                color: $date-color;
+                font-size: 12px;
+                font-style: italic;
+                margin-bottom: 5px;
+            }
+            li>a {
+                color: $white;
+                font-weight: 700;
+            }
+        }
+    }
+    .btn {
+        background-color: $body-color;
+        border: 1px solid $body-color;
+        color: $white;
+        &:focus {
+            background-color: $body-color;
+            color: $white;
+        }
+    }
+    .form {
+        margin-top: 20px;
+    }
+    .form-inline {
+        position: absolute;
+    }
+    .form-control,
+    .form-group {
+        float: right;
+        font-size: 1.1em;
+        height: 40px;
+        line-height: 1.2em;
+        button {
+            width: 40px;
+            border: 0;
+            border-radius: 0;
+        }
+        .input-group {
+            width: 100%;
+        }
+        .input-group-addon {
+            padding: 0;
+            border: 0;
+            width: 40px;
+        }
+    }
+    aside {
+        bottom: 0;
+        height: 410px;
+        background-color: $black;
+        margin-top: 4rem !important;
+        a {
+            color: $white;
+        }
+    }
 }
 
-
 .content {
-	margin: auto;
-	max-width: 1140px;
-	padding-left: 15px;
-	padding-right: 15px;
-	position: relative;
+    margin: auto;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
 }
 
 .promo-banner {
-	background-color: $link-color;
-	padding: 20px 0 15px;
-	margin-bottom: 15px;
-
-	strong {
-		display: block;
-		font-weight: 600;
-	}
+    background-color: $link-color;
+    margin-bottom: 15px;
+    padding: 20px 0 15px;
+    margin-top: -10px;
+    strong {
+        display: block;
+        font-weight: 600;
+    }
 }
 
-.promo-banner,
 .banner {
-	margin-top: -10px;
+    margin-top: -10px;
 }

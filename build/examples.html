@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>Govstrap.io - Bootstrapped GDS theme for GOV.UK related websites</title>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
+  <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Finally, govstrap styling-->
+  <link href="styles/govstrap.css" rel="stylesheet">
+  <!-- Finally, prism stylesheet for coloring the example markup-->
+  <link href="styles/prism.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+  <!-- [if IE 9] 
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js')
+  script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  -->
+  <!-- <![endif]-->
+</head>
+<body class="d-flex flex-column">
+  <header class="container-fluid">
+    <div class="row pl-1 mr-auto ml-auto">
+      <nav class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 navbar navbar-expand-md navbar-dark" id="navbar"><a class="navbar-brand" href="/">GOVSTRAP.io</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://code4health.org/" target="_blank" rel="noopener ">Code 4 Health<span class="sr-only">current</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://google.com/" target="_blank" rel="noopener ">Google</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://getbootstrap.org/" target="_blank" rel="noopener ">Bootstrap    </a></li>
+            <li class="nav-item"><a class="nav-link" href="https://jquery.org/" target="_blank" rel="noopener ">jQuery</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://webpack.org/" target="_blank" rel="noopener ">Webpack</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container examples">
+      <div class="row">
+        <aside class="col-sm-3 col-lg-2 col-xl-2 offset-lg-1 offset-xl-2">
+          <div class="side-bar side-bar-left"></div>
+        </aside>
+        <article class="col-sm-9 col-lg-8 col-xl-6"></article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="container-fluid footer">
+      <div class="row ml-auto mr-auto pl-1">
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 pt3"></div>
+        <hr>
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 pt-3">
+          <div class="row"> 
+            <div class="col-2"><a href="http://opusvl.com/" target="_blank" rel="noreferrer noopener"><img src="images/OpusVL-square-logo-40-NoBG.png" alt="OpusVL Logo"></a></div>
+            <div class="col-10">govstrap.io is an <a href="http://opusvl.com/" target="_blank" rel=" noopener">OpusVL</a> initiative.</div>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 pt-3">
+          <div class="row">
+            <div class="col-2"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel=" noopener"><img src="images/ogl.png" alt="Open Government Licence Image"></a></div>
+            <div class="col-10">
+              <p>All content is available under the<span><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel=" noopener">Open Government Licence v3.0</a></span><span>, except where otherwise stated</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p> <span>Govstrap.io is not affiliated or endorsed by GDS, the UK Government or any official channels. It is a community project to help propagate the good work of GDS.</span></p>
+              <p><span>Discover #Govstrap on</span><span> <a href="https://twitter.com/search?q=%23govstrap" rel="noopener " target="_blank">Twitter.</a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="vendors/bundle.js"></script>
+  <script type="text/javascript" src="scripts/prism.js"></script>
+  <script src="scripts/govstrap.js"></script>
+  <!-- [if IE 9]-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+  <!-- <![endif]-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug-->
+  <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+  <!-- Piwik-->
+  <script>
+    var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.govstrap.io"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+    var u="//web-analytics.opusvl.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 14]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+    
+  </script>
+  <noscript>
+    <p>  </p><img src="//web-analytics.opusvl.com/piwik.php?idsite=14" style="border:0;" alt="">
+    <!-- End Piwik Code-->
+    <!-- Piwik Image Tracker-->
+    <p></p><img src="http://web-analytics.opusvl.com/piwik.php?idsite=14&amp;rec=1" style="border:0;" alt="">
+    <!-- End Piwik-->
+  </noscript>
+</body>

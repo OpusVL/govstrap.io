@@ -31,7 +31,7 @@ This project is based on a simple and fast workflow focused mainly on the front-
 -   Includes:
     -   [`Normalize.css`](https://necolas.github.com/normalize.css/) for CSS normalizations and common bug fixes
     -   [`jQuery`](https://jquery.com/) via Bower installation
-    -   [`Bootstrap`](http://getbootstrap.com/) via Bower installation
+    -   [`Bootstrap4`](http://getbootstrap.com/) via Bower installation
     -   [`html5shiv`](https://github.com/aFarkas/html5shiv) via CDN
     -   [`Respond`](https://github.com/scottjehl/Respond) via CDN
     -   [`gulpfile.js`](http://gulpjs.com/) with Gulp presets
@@ -65,7 +65,7 @@ Initialize `npm` on `<my-project-name>` directory
 $ cd <my-project-name>
 $ npm install
 ```
-
+<!-- 
 Install `Gulp` locally
 
 ```bash
@@ -78,11 +78,11 @@ Install `Bower` local dependencies used for the site
 $ sudo bower install jquery bootstrap font-awesome --save-dev
 ```
 
-Finally, install `Gulp` required dependencies and developer dependencies
+Finally, install `Gulp` required dependencies and developer dependencies -->
 
-```bash
+<!-- ```bash
 $ npm i -D autoprefixer  gulp-babel browser-sync gulp-changed del gulp-eslint gulp-include gulp-imagemin gulp-pug minimist gulp-cssnano gulp-postcss gulp-rename gulp-sass run-sequence gulp-uglify gulp-plumber gulp-util graceful-fs minimatch
-```
+``` -->
 
 
 ### Running Your Local Server With Gulp

@@ -1,8 +1,10 @@
 //- JavaScript
 case env
   when "dev"
-    script(src="/vendors/bundle.js")
-    script(src="/scripts/govstrap.js")
+    script(src="vendors/bundle.js")
+    script(type="text/javascript" src='scripts/prism.js')
+    script(src="scripts/govstrap.js")
+      
     // [if IE 9]
     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js')
     // <![endif]
@@ -36,15 +38,19 @@ case env
 
     // Bootstrap core JavaScript
     //   ==================================================
-    // Placed at the end of the document so the pages load faster 
-
-    script(src="/vendors/bundle.min.js")
-    script(src="/scripts/govstrap.min.js")
+    // Placed at the end of the document so the pages load faster
+    
+    script(src="vendors/bundle.min.js")
+    script(src="scripts/govstrap.min.js")
+    script(type="text/javascript" src='scripts/prism.min.js')
+      
     // [if IE 9]
-    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js')
+     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js')
     // <![endif]
     // IE10 viewport hack for Surface/desktop Windows 8 bug
-    script(src='scripts/ie10-viewport-bug-workaround.js')
+    // [if IE 10]
+      script(src='scripts/ie10-viewport-bug-workaround.js')
+    // <![endif]
     // Piwik
     script.
       var _paq = _paq || [];

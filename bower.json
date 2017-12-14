@@ -14,8 +14,16 @@
   "homepage": "https://github.com/JohnMica/govstrap.io",
   "dependencies": {
     "jquery": "^3.2.1",
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "tooltip.js": "https://unpkg.com/tooltip.js",
+    "popper.js": "^1.12.9",
+    "bootstrap": "v4.0.0-beta"
   },
-  "ignore": []
+  "ignore": [],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "popper.js": "^1.12.9",
+    "bootstrap": "v4.0.0-beta"
+  }
 }

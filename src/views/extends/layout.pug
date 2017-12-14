@@ -1,11 +1,11 @@
 block variables
+include /includes/head
 
-head
-  include /includes/head
-body
-  header
-    include /includes/topnav.pug
-footer
-  block content
-  include /includes/footer
+body.d-flex.flex-column
+  header.container-fluid
+    include /includes/topnav
+  main
+    block content
+  footer
+    include /includes/footer
   include /includes/scripts

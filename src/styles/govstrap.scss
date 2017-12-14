@@ -1,6 +1,5 @@
-@import '../../bower_components/bootstrap/dist/css/bootstrap';
-@import '../../bower_components/font-awesome/css/font-awesome';
-@import 'colors';
+@import '../../node_modules/font-awesome/css/font-awesome';
+@import '../../node_modules/bootstrap/dist/css/bootstrap';
 @import 'base';
 @import 'navbar';
 @import 'hero';
@@ -10,160 +9,150 @@
 @import 'mediaQueries';
 
 .bg-primary {
-  padding         : 10px;
-  background-color: $secondary-link-color;
-
-  > a {
-    color          : $white;
-    text-decoration: none;
-    &:active,
-    &:focus,
-    &:hover {
-      color          : $white;
-      text-decoration: none;
+    padding: 10px;
+    background-color: $secondary-link-color;
+    >a {
+        color: $white;
+        text-decoration: none;
+        &:active,
+        &:focus,
+        &:hover {
+            color: $white;
+            text-decoration: none;
+        }
     }
-  }
 }
 
-.toggleable {
-  display: none;
-}
+// .toggleable {
+//     display: none;
+// }
 
 .banner {
-  background-color: $tweet-bg;
-  padding-top     : 10px;
-  padding-bottom  : 10px;
-
-  strong {
-    display       : block;
-    font-size     : 18px;
-    line-height   : 1.25;
-    font-weight   : 600;
-    text-transform: none;
-    margin-bottom : 15px;
-  }
+    background-color: $tweet-bg;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    strong {
+        display: block;
+        font-size: 18px;
+        line-height: 1.25;
+        font-weight: 600;
+        text-transform: none;
+        margin-bottom: 15px;
+    }
 }
 
 .phase-tag-beta {
-  display         : inline-block;
-  margin          : 0 8px 0 0;
-  padding         : 2px 5px;
-  font-size       : 14px;
-  line-height     : 1.1428571429;
-  font-weight     : 700;
-  text-transform  : uppercase;
-  letter-spacing  : 1px;
-  text-decoration : none;
-  color           : $white;
-  background-color: $phase-tag-beta;
+    display: inline-block;
+    margin: 0 8px 0 0;
+    padding: 2px 5px;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $white;
+    background-color: $phase-tag-beta;
 }
 
 .phase-tag-alpha {
-  display         : inline-block;
-  margin          : 0 8px 0 0;
-  padding         : 2px 5px;
-  font-family     : 'nta', Arial, sans-serif;
-  font-size       : 14px;
-  line-height     : 1.1428571429;
-  font-weight     : 700;
-  text-transform  : uppercase;
-  letter-spacing  : 1px;
-  text-decoration : none;
-  color           : $white;
-  background-color: $phase-tag-alpha;
+    display: inline-block;
+    margin: 0 8px 0 0;
+    padding: 2px 5px;
+    font-family: 'nta', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $white;
+    background-color: $phase-tag-alpha;
 }
 
 .login-form {
-  margin          : 0 auto;
-  max-width       : 500px;
-  margin-top      : 20px;
-  padding         : 15px 30px;
-  background-color: $code-bg;
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: $code-bg;
 }
 
 .well {
-  background-color: $well;
-  border          : 1px solid $date-color;
-  border-radius   : 0;
-  margin-top      : 10px;
+    background-color: $well;
+    border: 1px solid $date-color;
+    border-radius: 0;
+    margin-top: 10px;
 }
 
 .block-label {
-  vertical-align  : middle;
-  line-height     : 29px;
-  background-color: $bg-color;
-  border          : 1px solid $bg-color;
-  padding         : 10px 30px 12px 35px;
-
-  &.checked {
-    background-color: $white;
-    border          : 1px solid $body-color;
-  }
-
-  &:hover {
-    border: 1px solid $body-color;
-  }
-
-  input {
-    &[type=radio] {
-      position      : inherit;
-      vertical-align: bottom;
-      height        : 29px;
-      width         : 29px;
-      margin-right  : 10px;
-    }
-
-    &[type=checkbox] {
-      position      : relative;
-      display       : inline-block;
-      vertical-align: bottom;
-      height        : 29px;
-      width         : 29px;
-      margin-right  : 10px;
-
-      &:checked+label {
+    vertical-align: middle;
+    line-height: 29px;
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    padding: 10px 30px 12px 35px;
+    &.checked {
         background-color: $white;
-      }
+        border: 1px solid $body-color;
     }
-  }
+    &:hover {
+        border: 1px solid $body-color;
+    }
+    input {
+        &[type=radio] {
+            position: inherit;
+            vertical-align: bottom;
+            height: 29px;
+            width: 29px;
+            margin-right: 10px;
+        }
+        &[type=checkbox] {
+            position: relative; // display       : inline-block;
+            vertical-align: bottom;
+            height: 29px;
+            width: 29px;
+            margin-right: 10px;
+            &:checked+label {
+                background-color: $white;
+            }
+        }
+    }
 }
 
 .checkbox {
-  label {
-    &.block-label {
-      padding-left: 35px;
-
-      &:hover {
-        border: 1px solid $body-color;
-      }
+    label {
+        &.block-label {
+            padding-left: 35px;
+            &:hover {
+                border: 1px solid $body-color;
+            }
+        }
     }
-  }
 }
 
 .js-hidden {
-  display: none;
+    display: none;
 }
 
 .panel-left {
-  border-left : 5px solid $light-gray-blue;
-  padding-left: 20px;
+    border-left: 5px solid $light-gray-blue;
+    padding-left: 20px;
 }
 
 .btn-start {
-  background-image   : url('../img/icon-pointer.png');
-  background-position: 100% 50%;
-  background-repeat  : no-repeat;
-  padding-right      : 3.157895em;
-  font-weight        : 700;
-  text-transform     : none;
-
-  &:active,
-  &:focus {
-    background-image   : url('../img/icon-pointer.png');
+    background-image: url('../img/icon-pointer.png');
     background-position: 100% 50%;
-    background-repeat  : no-repeat;
-    padding-right      : 3.157895em;
-    font-weight        : 700;
-    text-transform     : none;
-  }
+    background-repeat: no-repeat;
+    padding-right: 3.157895em;
+    font-weight: 700;
+    text-transform: none;
+    &:active,
+    &:focus {
+        background-image: url('../img/icon-pointer.png');
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        padding-right: 3.157895em;
+        font-weight: 700;
+        text-transform: none;
+    }
 }

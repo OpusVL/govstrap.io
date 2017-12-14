@@ -1,110 +1,45 @@
+    @import 'colors';
+header {
+    background-color: $body-color;
+}
 
 .navbar {
-	background-color: $body-color;
-	border-radius: 0;
-	margin-bottom: 0;
-	text-align: left;
-	border: 0;
-
-	a {
-
-		&:hover {
-			color: $white;
-			background-color: transparent;
-			text-decoration: none;
-		}
-	}
-
-	li {
-		a {
-			color: $white;
-			font-size: 1em;
-			font-weight: normal;
-			text-transform: none;
-			line-height: 2em;
-			text-decoration: none;
-
-			&:hover {
-				background-color: transparent;
-				text-decoration: none;
-				border-bottom: 1px solid $white;
-			}
-		}
-
-		>.active {
-			a {
-				color: $link-active;
-			}
-		}
-	}
-
-	.navbar-brand {
-		color: $white;
-		font-size: 1.9em;
-		line-height: 1.9em;
-		padding-top: 0;
-		font-weight: normal;
-		text-transform: none;
-		text-decoration: none;
-		text-align: left;
-
-		&:hover {
-			color: $white;
-			background-color: transparent;
-			text-decoration: none;
-			border-bottom: 1px solid $white;
-		}
-	}
-
-	.navbar-wrapper {
-		margin: 0 auto;
-		padding-left: 15px;
-		text-align: left;
-
-		.navbar-header {
-			display: inline-block;
-			width: 100%;
-			vertical-align: baseline;
-		}
-	}
-
-	.navbar-default {
-		border: 0;
-	}
-
-	.navbar-toggle {
-		border-color: $black;
-	}
-}
-
-.list-unstyled {
-	a {
-		color: $white;
-		text-decoration: none;
-	}
-}
-
-.navbar-nav {
-	li {
-		float: none;
-		display: inline-block;
-	}
-}
-
-
-.nav-pills > li > a {
-	border-radius: 0;
-
-	&:hover {
-		background-color: $bg-color;
-	}
-}
-
-
-.nav > li {
-	a {
-		&:focus {
-			background-color: transparent;
-		}
-	}
+    a {
+        color: $white;
+        font-size: 28px;
+        font-weight: 500;
+        &:active {
+            color: $white;
+        }
+        &:visited {
+            color: $white;
+        }
+        &:focus {
+            color: $white;
+            background-color: transparent;
+            outline: 3px solid $link-color;
+        }
+    }
+    .navbar-toggler {
+        color: $white;
+        border-radius: 0;
+        border: 1px solid $body-color;
+        &:active,
+        &:focus {
+            border-color: $body-color;
+            outline: 0;
+        }
+    }
+    .nav-item {
+        .nav-link {
+            color: $white;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .navbar-collapse.collapsing {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+    }
 }

@@ -4,6 +4,7 @@
 	background-color: $bg-color;
 	min-height: 300px;
 	margin-top: 30px;
+	margin-bottom: 0;
 	padding-top: 20px;
 	padding-bottom: 30px;
 
@@ -49,4 +50,24 @@
 .scroll-top {
 	font-size: 15px;
 	font-weight: normal;
+}
+
+.footer-top {
+
+  border-bottom: 1px solid #bfc1c3;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  h4 {
+    border-bottom: 1px solid #bfc1c3;
+    padding: 0 0 20px;
+  }
+  ul {
+     list-style-type: none;
+     padding-left: 0;
+
+     > li {
+         margin-bottom: 10px;
+     }
+ }
 }
