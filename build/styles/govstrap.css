@@ -12652,7 +12652,7 @@ aside .inverse {
 }
 
 .btn-start {
-  background-image: url("../img/icon-pointer.png");
+  background-image: url("../images/icon-pointer.png");
   background-position: 100% 50%;
   background-repeat: no-repeat;
   padding-right: 3.157895em;
@@ -12661,7 +12661,7 @@ aside .inverse {
 }
 
 .btn-start:active, .btn-start:focus {
-  background-image: url("../img/icon-pointer.png");
+  background-image: url("../images/icon-pointer.png");
   background-position: 100% 50%;
   background-repeat: no-repeat;
   padding-right: 3.157895em;
