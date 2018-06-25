@@ -4,6 +4,7 @@ entry_descripton: "This Boilerplate Starter Kit is a Front-end web kit and boile
 entry_url: 'https://github.com/OpusVL/govstrap.io/tree/bootstrap4'
 entry_logoURL: ''
 entry_lang: 'en'
+entry_country: 'UK'
 entry_category: ['localgov']
 entry_protocol: ['git', 'https']
 entry_license: 'MIT'
