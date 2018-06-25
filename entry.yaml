@@ -5,6 +5,7 @@ entry_url: 'https://github.com/OpusVL/govstrap.io/tree/bootstrap4'
 entry_logoURL: ''
 entry_lang: 'en'
 entry_country: 'UK'
+entry_sector: 'localGov'
 entry_category: ['localgov']
 entry_protocol: ['git', 'https']
 entry_license: 'MIT'
