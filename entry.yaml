@@ -6,7 +6,7 @@ entry_logoURL: ''
 entry_lang: 'en'
 entry_country: 'UK'
 entry_sector: 'localGov'
-entry_category: ['localgov']
+entry_category: 'localgov'
 entry_protocol: ['git', 'https']
 entry_license: 'MIT'
 m_category: ['public', 'commercial']
