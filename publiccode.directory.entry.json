@@ -1,36 +1,48 @@
 {
-  "entry_name": "Govstrap.io",
+    "name": "Govstrap.io",
 
-  "entry_type": "software",
+    "type": "software",
 
-  "entry_descripton": "This Boilerplate Starter Kit is a Front-end web kit and boilerplate for building web apps or small sites reflecting the GOV.UK designs patterns using Pug(Jade) and Sass / Scss. Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework which allows developers with working knowledge of Bootstrap to build GOV.UK related sites without learning the details of the GDS methods. This software enables the developer to take advantage of the significant investments made by GDS in accessibility and device compatibility by re-using the GDS theme.",
+    "description": "This Boilerplate Starter Kit is a Front-end web kit and boilerplate for building web apps or small sites reflecting the GOV.UK designs patterns using Pug(Jade) and Sass / Scss. Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework which allows developers with working knowledge of Bootstrap to build GOV.UK related sites without learning the details of the GDS methods. This software enables the developer to take advantage of the significant investments made by GDS in accessibility and device compatibility by re-using the GDS theme.",
 
-  "entry_url": "https://github.com/OpusVL/govstrap.io/",
+    "official_url": "https://govstrap.io",
 
-  "entry_logoURL": "",
+    "repository": "https://github.com/OpusVL/govstrap.io/",
 
-  "entry_lang": "en-GB",
+    "logo_url": "",
 
-  "entry_origin_country": "UK",
+    "language": ["EN"],
 
-  "entry_sector": "localgov",
+    "origin_country": "UK",
 
-  "entry_category": "website",
+    "sector": ["localgov"],
 
-  "entry_license": "Open Government Licence v3.0",
+    "category": ["website"],
 
-  "developer_category": ["public", "commercial"],
+    "license": ["Open Government Licence v3.0"],
 
-  "developer_geolocation": {
-    "lat": 52.371376,
-    "long": -1.263980
-  },
+    "developers": [{
+        "developer_name": "OpusVL",
+        "developer_logo_url": "https://opusvl.com/_asset/logo.svg/logo.svg",
+        "developer_url": "https://opusvl.com",
+        "developer_category": "public"
+    }],
+    "maintainers": [{
+        "maintainer_name": "OpusVL",
+        "maintainer_url": "https://opusvl.com",
+        "maintainer_logo_url": "https://opusvl.com/_asset/logo.svg/logo.svg",
+        "maintainer_repository": "https://github.com/OpusVL/govstrap.io"
+    }],
+    "users": [{
+        "user_name": "City council",
+        "user_location": "London, UK",
+        "user_logo_url": "https://link.to.logo.if.it.exists",
+        "user_url": "https://link.to.curent.public.website",
+        "user_geolocation": {
+            "lat": 53.371376,
+            "long": -1.23398
+        }
+    }]
 
-  "developer_name": "OpusVL",
-
-  "developer_logo_url": "https://opusvl.com/_asset/logo.svg/logo.svg",
-
-  "developer_url": "https://opusvl.com"
 
 }
-
