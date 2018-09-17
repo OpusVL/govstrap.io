@@ -1,7 +1,7 @@
 {
     "name": "Govstrap.io",
 
-    "type": "software",
+    "soft_type": "software",
 
     "description": "This Boilerplate Starter Kit is a Front-end web kit and boilerplate for building web apps or small sites reflecting the GOV.UK designs patterns using Pug(Jade) and Sass / Scss. Govstrap.io is a port of the GOV.UK standard web theme to the Bootstrap framework which allows developers with working knowledge of Bootstrap to build GOV.UK related sites without learning the details of the GDS methods. This software enables the developer to take advantage of the significant investments made by GDS in accessibility and device compatibility by re-using the GDS theme.",
 
@@ -25,7 +25,7 @@
         "developer_name": "OpusVL",
         "developer_logo_url": "https://opusvl.com/_asset/logo.svg/logo.svg",
         "developer_url": "https://opusvl.com",
-        "developer_category": "public"
+        "developer_category": "Commercial"
     }],
     "maintainers": [{
         "maintainer_name": "OpusVL",
